@@ -22,7 +22,7 @@ nav.menu-lat{
     overflow: hidden;
 }
 
-nav.menu-lat:hover {
+nav.menu-lat.expandir {
     width: 300px;
     transition: 1s;
 }
@@ -44,7 +44,11 @@ ul {
 }
 
 ul li.item-menu{
-    transition: 1s;
+    transition: 0.5s;
+}
+
+ul li.ativo{
+    background-color: #729762;
 }
 
 ul li.item-menu:hover{
@@ -61,7 +65,16 @@ ul li.item-menu a{
 }
 
 ul li.item-menu a .txt-link{
+    margin-left: 80px;
+    transition: 1s;
+    opacity: 0;
+
+}
+
+nav.menu-lat.expandir .txt-link {
     margin-left: 40px;
+    transition: 1s;
+    opacity: 100%;
 }
 
 ul li.item-menu a .icon > i {
