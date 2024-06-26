@@ -1,3 +1,4 @@
+
 * {
     font-family: poppins;
     margin: 0;
@@ -24,6 +25,19 @@ header {
     justify-content: flex-end;
     align-items: center;
     z-index: 98;
+}
+
+.telaLogin .fechar {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 45px;
+    height: 45px;
+    font-size: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
 }
 
 .login button {
@@ -64,6 +78,10 @@ header {
 .telaLogin .formLog {
     width: 100%;
     padding: 40px;
+}
+
+.telaLogin {
+    display: flex;
 }
 
 .telaLogin h2 {
