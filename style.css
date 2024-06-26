@@ -6,20 +6,188 @@
 }
 
 body{
-    height: 100vh;
+    background: url(https://universes.art/fileadmin/_processed_/3/4/csm_Iguazu-2000-750-mehr-himmel_ca8d1a0170.jpg) no-repeat;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+
+header {
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 100%;
+    background: #E7F0DC;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    z-index: 98;
+}
+
+.login button {
+    width: 130px;
+    height: 50px;
+    border-radius: 10px;
+    margin: 20px 15px 0 0;
+    cursor: pointer;
+    font-size: 15px;
+    background:  #597445;
+    color: #E7F0DC;
+    transition: .5s;
+    border: none;
+}
+
+.login button:hover {
+    background: #2b3821;
+    transition: .5s;
+    transform: scale(1.05);
+}
+
+.telaLogin{
+    color: #E7F0DC;
+    position: relative;
+    width: 400px;
+    height: 440px;
+    background: transparent;
+    border: 1px solid rgba(255, 255, 255, .5);
+    border-bottom: 20px;
+    backdrop-filter: blur(15px);
+    border-radius: 20px;
+    box-shadow: 0 0 30px rgba(0, 0, 0, .5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.telaLogin .formLog {
+    width: 100%;
+    padding: 40px;
+}
+
+.telaLogin h2 {
+    font-size: 32px;
+    letter-spacing: -2px;
+    color: #E7F0DC;
+    text-align: center;
+}
+
+.input-box {
+    position: relative;
+    width: 100%;
+    height: 50px;
+    border-bottom: #0c0f09 2px solid;
+    margin: 30px 0;
+}
+
+.input-box label {
+    position: absolute;
+    top: 50%;
+    left: 5px;
+    transform: translateY(-50%);
+    font-size: 16px;
+    color: #2b3821;
+    pointer-events: none;
+    font-weight: 450;
+}
+
+.input-box input:focus~label,
+.input-box input:valid~label {
+    top: -5px;
+}
+
+.input-box input{
+    width: 100%;
+    height: 100%;
+    border: none;
+    outline: none;
+    background: transparent;
+    font-size: 16px;
+    color: white;
+    font-weight: 200;
+    padding: 0 35px 0 5px;
+}
+
+.input-box .icon-log{
+    position: absolute;
+    right: 8px;
+    font-size: 20px;
+    color: #151c11;
+    line-height: 57px;
+}
+
+.gerenc-senha {
+    font-size: 14px;
+    color: #151c11;
+    font-weight: 500;
+    margin: -25px 0 25px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.gerenc-senha label input {
+    accent-color: #415435;
+    margin-right: 3px;
+}
+
+.gerenc-senha a {
+    color: #232d1d;
+    text-decoration: none;
+}
+
+.gerenc-senha a:hover{
+    text-decoration: underline;
+}
+
+.btnSubmit{
+    width: 100%;
+    height: 50px;
+    border-radius: 20px;
+    border: none;
+    outline: none;
+    color: #E7F0DC;
+    background-color: #597445;
+    transition: .5s;
+    margin-bottom: 20px;
+    font-weight: 500;
+    cursor: pointer;
+}
+
+.btnSubmit:hover {
+    background-color: #151c11;
+    transform: scale(1.05);
+    transition: .5s;
+}
+
+.registro {
+    font-size: 16px;
+    font-weight: 400;
+    color: #E7F0DC;
+    text-align: center;
+}
+
+.registro p a {
+    text-decoration: none;
+    color: #131b0d;
+    font-weight: 600;
+}
+
+.registro p a:hover {
+    text-decoration: underline;
 }
 
 nav.menu-lat{
     width: 75px;
     height: 100%;
     background-color: #597445;
-    padding: 20px 0 20px 1%;
     box-shadow: 3px 0 0 #729762;
     position: fixed;
     top: 0;
     left: 0;
-    transition: 1s;
     overflow: hidden;
+    transition: 1s;
+    z-index: 99;
 }
 
 nav.menu-lat.expandir {
@@ -29,13 +197,14 @@ nav.menu-lat.expandir {
 
 .btn-expnd{
     width: 100%;
-    padding-left:px;
+    padding-left: 10px;
 }
 
 .btn-expnd > i{
     color: #E7F0DC;
     font-size: 36px;
     cursor: pointer;
+    margin: 10px;
 }
 
 ul {
@@ -80,4 +249,5 @@ nav.menu-lat.expandir .txt-link {
 ul li.item-menu a .icon > i {
     font-size: 25px;
     margin-left: 5px;
+    padding-left: 15px;
 }
