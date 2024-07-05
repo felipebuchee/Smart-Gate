@@ -16,7 +16,7 @@ header {
     top: 0;
     right: 0;
     width: 100%;
-    background: #E7F0DC;
+    background: transparent;
     display: flex;
     justify-content: flex-end;
     align-items: center;
@@ -126,7 +126,7 @@ header {
     font-size: 16px;
     color: #2b3821;
     pointer-events: none;
-    font-weight: 450;
+    font-weight: 450;2
 }
 
 .input-box input:focus~label,
