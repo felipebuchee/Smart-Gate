@@ -9,6 +9,7 @@ body{
     justify-content: center;
     align-items: center;
     min-height: 100vh;
+    background: url(https://turismoitaipu.com.br/wp-content/uploads/2024/03/cataratas-do-iguacu-em-foz-com-arco-iris-1.jpg) no-repeat;
 }
 header {
     position: fixed;
@@ -66,10 +67,38 @@ header {
     display: flex;
     justify-content: center;
     align-items: center;
+    transition: height .2s ease;
+    overflow: hidden;
 }
-.telaLogin .formLog {
+
+.telaLogin .form-reg {
     width: 100%;
     padding: 40px;
+}
+
+.telaLogin.ativoMenu{
+    height: 600px;
+}
+
+.telaLogin.ativoMenu .form-log{
+    transition: 0.5s;
+    transform: translate(400px);
+}
+
+.telaLogin.ativoMenu .form-reg{
+    transition: 0.5s;
+    transform: translate(0px);
+}
+
+.telaLogin .form-log{
+    transition: 0.5s;
+    transform: translate(0);
+}
+
+.telaLogin .form-reg{
+    position: absolute;
+    transform: translate(-400px);
+    transition: 0.5s;
 }
 
 .telaLogin {
