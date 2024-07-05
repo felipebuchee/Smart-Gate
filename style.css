@@ -1,21 +1,15 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
-
 * {
-    font-family: 'Poppins', sans-serif;
+    font-family: poppins;
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
-
-body {
-    background: url('https://universes.art/fileadmin/_processed_/3/4/csm_Iguazu-2000-750-mehr-himmel_ca8d1a0170.jpg') no-repeat center center/cover;
+body{
     display: flex;
     justify-content: center;
     align-items: center;
     min-height: 100vh;
-    color: #E7F0DC;
 }
-
 header {
     position: fixed;
     top: 0;
@@ -28,50 +22,10 @@ header {
     z-index: 98;
 }
 
-.login button {
-    width: 130px;
-    height: 50px;
-    border-radius: 10px;
-    margin: 20px 15px 0 0;
-    cursor: pointer;
-    font-size: 15px;
-    background: #597445;
-    color: #E7F0DC;
-    border: none;
-    transition: background .5s, transform .5s;
-}
-
-.login button:hover {
-    background: #2b3821;
-    transform: scale(1.05);
-}
-
-.telaLogin {
-    color: #E7F0DC;
-    position: relative;
-    width: 400px;
-    background: rgba(0, 0, 0, 0.5);
-    border: 1px solid rgba(255, 255, 255, .5);
-    border-radius: 20px;
-    box-shadow: 0 0 30px rgba(0, 0, 0, .5);
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    overflow: hidden;
-    transform: scale(0);
-    transition: transform .2s ease, height .2s ease;
-}
-
-.telaLogin.active {
-    transform: scale(1);
-    height: 570px;
-}
-
 .telaLogin .fechar {
     position: absolute;
-    top: 10px;
-    right: 10px;
+    top: 0;
+    right: 0;
     width: 45px;
     height: 45px;
     font-size: 20px;
@@ -81,42 +35,60 @@ header {
     cursor: pointer;
 }
 
-.telaLogin .form-log, .telaLogin .form-reg {
+.login button {
+    width: 130px;
+    height: 50px;
+    border-radius: 10px;
+    margin: 20px 15px 0 0;
+    cursor: pointer;
+    font-size: 15px;
+    background:  #597445;
+    color: #E7F0DC;
+    transition: .5s;
+    border: none;
+}
+.login button:hover {
+    background: #2b3821;
+    transition: .5s;
+    transform: scale(1.05);
+}
+.telaLogin{
+    color: #E7F0DC;
+    position: relative;
+    width: 400px;
+    height: 440px;
+    background: transparent;
+    border: 1px solid rgba(255, 255, 255, .5);
+    border-bottom: 20px;
+    backdrop-filter: blur(15px);
+    border-radius: 20px;
+    box-shadow: 0 0 30px rgba(0, 0, 0, .5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.telaLogin .formLog {
     width: 100%;
     padding: 40px;
-    transition: transform .2s ease;
 }
 
-.telaLogin .form-log {
-    transform: translateX(0);
-}
-
-.telaLogin .form-reg {
-    transform: translateX(400px);
-}
-
-.telaLogin.active .form-reg {
-    transform: translateX(0);
-}
-
-.telaLogin.active .form-log {
-    transform: translateX(-400px);
+.telaLogin {
+    display: flex;
 }
 
 .telaLogin h2 {
     font-size: 32px;
     letter-spacing: -2px;
+    color: #E7F0DC;
     text-align: center;
 }
-
 .input-box {
     position: relative;
     width: 100%;
     height: 50px;
-    border-bottom: 2px solid #0c0f09;
+    border-bottom: #0c0f09 2px solid;
     margin: 30px 0;
 }
-
 .input-box label {
     position: absolute;
     top: 50%;
@@ -125,16 +97,15 @@ header {
     font-size: 16px;
     color: #2b3821;
     pointer-events: none;
-    transition: top .2s, font-size .2s;
+    font-weight: 450;
 }
 
 .input-box input:focus~label,
 .input-box input:valid~label {
     top: -5px;
-    font-size: 12px;
 }
 
-.input-box input {
+.input-box input{
     width: 100%;
     height: 100%;
     border: none;
@@ -142,17 +113,16 @@ header {
     background: transparent;
     font-size: 16px;
     color: white;
+    font-weight: 200;
     padding: 0 35px 0 5px;
 }
-
-.input-box .icon-log {
+.input-box .icon-log{
     position: absolute;
     right: 8px;
     font-size: 20px;
     color: #151c11;
     line-height: 57px;
 }
-
 .gerenc-senha {
     font-size: 14px;
     color: #151c11;
@@ -161,56 +131,50 @@ header {
     display: flex;
     justify-content: space-between;
 }
-
 .gerenc-senha label input {
     accent-color: #415435;
     margin-right: 3px;
 }
-
 .gerenc-senha a {
     color: #232d1d;
     text-decoration: none;
 }
-
-.gerenc-senha a:hover {
+.gerenc-senha a:hover{
     text-decoration: underline;
 }
-
-.btnSubmit {
+.btnSubmit{
     width: 100%;
     height: 50px;
     border-radius: 20px;
     border: none;
+    outline: none;
     color: #E7F0DC;
     background-color: #597445;
-    transition: background .5s, transform .5s;
+    transition: .5s;
     margin-bottom: 20px;
     font-weight: 500;
     cursor: pointer;
 }
-
 .btnSubmit:hover {
     background-color: #151c11;
     transform: scale(1.05);
+    transition: .5s;
 }
-
 .registro {
     font-size: 16px;
     font-weight: 400;
+    color: #E7F0DC;
     text-align: center;
 }
-
 .registro p a {
     text-decoration: none;
     color: #131b0d;
     font-weight: 600;
 }
-
 .registro p a:hover {
     text-decoration: underline;
 }
-
-nav.menu-lat {
+nav.menu-lat{
     width: 75px;
     height: 100%;
     background-color: #597445;
@@ -219,63 +183,55 @@ nav.menu-lat {
     top: 0;
     left: 0;
     overflow: hidden;
-    transition: width 1s;
+    transition: 1s;
     z-index: 99;
 }
-
 nav.menu-lat.expandir {
     width: 300px;
+    transition: 1s;
 }
-
-.btn-expnd {
+.btn-expnd{
     width: 100%;
     padding-left: 10px;
 }
-
-.btn-expnd > i {
+.btn-expnd > i{
     color: #E7F0DC;
     font-size: 36px;
     cursor: pointer;
     margin: 10px;
 }
-
 ul {
     height: 100%;
     list-style-type: none;
 }
-
-ul li.item-menu {
-    transition: background .5s;
+ul li.item-menu{
+    transition: 0.5s;
 }
-
-ul li.ativo {
+ul li.ativo{
     background-color: #729762;
 }
-
-ul li.item-menu:hover {
+ul li.item-menu:hover{
     background: #729762;
 }
-
-ul li.item-menu a {
+ul li.item-menu a{
     color: #E7F0DC;
     text-decoration: none;
     font-size: 20px;
     padding: 20px 4%;
     display: flex;
-    align-items: center;
+    line-height: 40px;
+    
 }
-
-ul li.item-menu a .txt-link {
+ul li.item-menu a .txt-link{
     margin-left: 80px;
-    transition: margin-left 1s, opacity 1s;
+    transition: 1s;
     opacity: 0;
 }
-
 nav.menu-lat.expandir .txt-link {
     margin-left: 40px;
-    opacity: 1;
+    transition: 1s;
+    opacity: 100%;
 }
-
 ul li.item-menu a .icon > i {
     font-size: 25px;
     margin-left: 5px;
