@@ -126,7 +126,7 @@ header {
     font-size: 16px;
     color: #2b3821;
     pointer-events: none;
-    font-weight: 450;2
+    font-weight: 450;
 }
 
 .input-box input:focus~label,
