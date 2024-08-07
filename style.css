@@ -1,3 +1,8 @@
+/*#F7B910 AMARELO*/
+/*#D91720 VERMELHO*/
+/*#1578BC AZUL*/
+/*#009535 VERDE*/
+
 * {
     font-family: poppins;
     margin: 0;
@@ -9,7 +14,7 @@ body{
     justify-content: center;
     align-items: center;
     min-height: 100vh;
-    background: url(https://turismoitaipu.com.br/wp-content/uploads/2024/03/cataratas-do-iguacu-em-foz-com-arco-iris-1.jpg) no-repeat;
+    background: url(https://muraldoparana.com.br/wp-content/uploads/2023/06/ifpr-foz-1.jpeg);
 }
 header {
     position: fixed;
@@ -43,13 +48,13 @@ header {
     margin: 20px 15px 0 0;
     cursor: pointer;
     font-size: 15px;
-    background:  #597445;
+    background:  #1578BC;
     color: #E7F0DC;
     transition: .5s;
     border: none;
 }
 .login button:hover {
-    background: #2b3821;
+    background: #12639a;
     transition: .5s;
     transform: scale(1.05);
 }
@@ -124,7 +129,7 @@ header {
     left: 5px;
     transform: translateY(-50%);
     font-size: 16px;
-    color: #2b3821;
+    color: white;
     pointer-events: none;
     font-weight: 450;
 }
@@ -149,23 +154,23 @@ header {
     position: absolute;
     right: 8px;
     font-size: 20px;
-    color: #151c11;
+    color: #D91720;
     line-height: 57px;
 }
 .gerenc-senha {
     font-size: 14px;
-    color: #151c11;
+    color: #027d2d;
     font-weight: 500;
     margin: -25px 0 25px;
     display: flex;
     justify-content: space-between;
 }
 .gerenc-senha label input {
-    accent-color: #415435;
+    accent-color: #009535;
     margin-right: 3px;
 }
 .gerenc-senha a {
-    color: #232d1d;
+    color: #027d2d;
     text-decoration: none;
 }
 .gerenc-senha a:hover{
@@ -178,14 +183,14 @@ header {
     border: none;
     outline: none;
     color: #E7F0DC;
-    background-color: #597445;
+    background-color: #009535;
     transition: .5s;
     margin-bottom: 20px;
     font-weight: 500;
     cursor: pointer;
 }
 .btnSubmit:hover {
-    background-color: #151c11;
+    background-color: #027d2d;
     transform: scale(1.05);
     transition: .5s;
 }
@@ -206,8 +211,8 @@ header {
 nav.menu-lat{
     width: 75px;
     height: 100%;
-    background-color: #597445;
-    box-shadow: 3px 0 0 #729762;
+    background-color: #009535;
+    box-shadow: 3px 0 0 #009535;
     position: fixed;
     top: 0;
     left: 0;
@@ -237,10 +242,10 @@ ul li.item-menu{
     transition: 0.5s;
 }
 ul li.ativo{
-    background-color: #729762;
+    background-color: #009535;
 }
 ul li.item-menu:hover{
-    background: #729762;
+    background: #027d2d;
 }
 ul li.item-menu a{
     color: #E7F0DC;
