@@ -3,9 +3,9 @@ var btnCadt = document.querySelector('.btnCadt');
 var fechar = document.querySelector('.fechar');
 
 btnCadt.addEventListener('click', ()=>{
-    telaLogin.classList.add('ativoTela');
+    formReg.classList.add('ativoTela');
 });
 
 fechar.addEventListener('click', ()=>{
-    telaLogin.classList.remove('ativoTela');
+    formReg.classList.remove('ativoTela');
 });
