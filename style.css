@@ -1,3 +1,4 @@
+
 /*#F7B910 AMARELO*/
 /*#D91720 VERMELHO*/
 /*#1578BC AZUL*/
@@ -12,8 +13,9 @@
 body{
     display: flex;
     justify-content: center;
+    align-items: center;
     min-height: 100vh;
-    overflow-x: hidden;
+    background: url(https://muraldoparana.com.br/wp-content/uploads/2023/06/ifpr-foz-1.jpeg);
 }
 header {
     position: fixed;
@@ -25,35 +27,6 @@ header {
     justify-content: flex-end;
     align-items: center;
     z-index: 98;
-}
-
-header img{
-    height: 50px;
-    padding-top: 15px;
-    padding-right: 50px;
-    filter: brightness(0) invert(1);
-}
-
-.sobre-projeto{
-    display: flex;
-    height: 300px;
-    width: 100vw;
-    background-color: #D91720;
-}
-
-.sobre-projeto h2{
-    color: white;
-    padding-left: 200px;
-    padding-top: 90px;
-    font-size: 36px;
-}
-
-.sobre-projeto p{
-    color: white;
-    padding-left: 150px;
-    padding-top: 70px;
-    margin: 50px;
-    font-size: 20px;
 }
 
 .telaLogin .fechar {
@@ -89,7 +62,7 @@ header img{
 
 .telaLogin{
     scale: 0;
-    transition: 0.5s;
+    transition: 1s;
     overflow: hidden;
 }
 
@@ -110,7 +83,7 @@ header img{
     transition: height .2s ease;
     overflow: hidden;
     scale: 1;
-    transition: 0.5s;
+    transition: 1s;
 }
 
 .telaLogin .form-reg {
