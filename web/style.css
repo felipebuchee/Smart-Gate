@@ -34,10 +34,14 @@ main {
 .text-sobre-proj{
     margin-left: 30px;
     margin-top: 50px;
+    overflow: hidden;
+    margin-right: 70px;
+    padding-right: 100px;
 }
 
 .text-sobre-proj h2{
     font-size: 36px;
+    margin-left: 30px;
 }
 
 .sub-main {
@@ -111,9 +115,8 @@ header {
     z-index: 100;
     width: 400px;
     height: 440px;
-    background: rgba(0, 0, 0, 0.5);
+    background-color:#F7B910;
     border-radius: 20px;
-    box-shadow: 0 0 30px rgba(0, 0, 0, 0.5);
     display: flex;
     justify-content: center;
     align-items: center;
@@ -121,7 +124,7 @@ header {
     transition: 1s;
 }
 
-.telaLogin .form-reg {
+.telaLogin .formReg.ativoTela {
     width: 100%;
     padding: 40px;
 }
@@ -135,7 +138,7 @@ header {
     transform: translate(400px);
 }
 
-.telaLogin.ativoMenu .form-reg {
+.telaLogin.ativoMenu .formReg {
     transition: 0.5s;
     transform: translate(0px);
 }
@@ -145,7 +148,7 @@ header {
     transform: translate(0);
 }
 
-.telaLogin .form-reg {
+.telaLogin .formReg {
     position: absolute;
     transform: translate(-400px);
     transition: 0.5s;
