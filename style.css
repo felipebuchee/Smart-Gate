@@ -27,11 +27,13 @@ main {
     position: absolute;
     width: 100vw;
     height: 100vh;
+    background-color: transparent;
 }
 
 .imagem-catraca img{
-    height: 1000px;
     float: right;
+    height: 900px;
+    background-color: transparent;
 }
 
 
@@ -42,6 +44,7 @@ main {
     height: 700px;
     background-color: white ;
     color: #D91720;
+    float: left;
 }
 
 .text-sobre-proj{
@@ -57,25 +60,38 @@ main {
     margin-top: 50px;
 }
 
+.text-sobre-proj p {
+    display: flex;
+    justify-content: left;
+    font-size: 18px;
+}
+
 .desenvolvimento {
     display: flex;
     width: 100vw;
-    height: 500px;
+    height: 700px;
     background-color: #F7B910;
     color: white;
+    float: left;
 }
 
 .text-desenvolvimento{
-    margin-left: 30px;
-    margin-top: 50px;
     overflow: hidden;
     margin-right: 70px;
     padding-right: 100px;
+    margin-left: 50px;
+    margin-right: 700px;
 }
 
 .text-desenvolvimento h2{
-    font-size: 36px;
-    margin-left: 30px;
+    font-size: 85px;
+    margin-top: 50px;
+}
+
+.text-desenvolvimento p {
+    display: flex;
+    justify-content: left;
+    font-size: 18px;
 }
 
 .idealizadores {
@@ -191,12 +207,12 @@ header {
 }
 
 .telaLogin.ativoMenu .form-log {
-    transition: 0.5s;
+    transition: 1s;
     transform: translate(400px);
 }
 
 .telaLogin.ativoMenu .formReg {
-    transition: 0.5s;
+    transition: 1s;
     transform: translate(0px);
 }
 
@@ -249,7 +265,7 @@ header {
     outline: none;
     background: transparent;
     font-size: 16px;
-    color: white;
+    color: rgb(0, 0, 0);
     font-weight: 200;
     padding: 0 35px 0 5px;
 }
