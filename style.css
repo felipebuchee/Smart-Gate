@@ -24,13 +24,14 @@ main {
 }
 
 .imagem-catraca{
-    float: right;
+    position: absolute;
+    width: 100vw;
+    height: 100vh;
 }
 
 .imagem-catraca img{
-    display: flex;
-    justify-content: center;
     height: 1000px;
+    float: right;
 }
 
 
@@ -48,7 +49,7 @@ main {
     margin-right: 70px;
     padding-right: 100px;
     margin-left: 50px;
-    margin-right: 400px;
+    margin-right: 700px;
 }
 
 .text-sobre-proj h2{
