@@ -23,15 +23,48 @@ main {
     display: block;
 }
 
+.imagem-catraca{
+    float: right;
+}
+
+.imagem-catraca img{
+    display: flex;
+    justify-content: center;
+    height: 1000px;
+}
+
+
+
 .sobre-proj {
     display: flex;
     width: 100vw;
-    height: 500px;
-    background-color: #D91720;
-    color: white;
+    height: 700px;
+    background-color: white ;
+    color: #D91720;
 }
 
 .text-sobre-proj{
+    overflow: hidden;
+    margin-right: 70px;
+    padding-right: 100px;
+    margin-left: 50px;
+    margin-right: 400px;
+}
+
+.text-sobre-proj h2{
+    font-size: 85px;
+    margin-top: 50px;
+}
+
+.desenvolvimento {
+    display: flex;
+    width: 100vw;
+    height: 500px;
+    background-color: #F7B910;
+    color: white;
+}
+
+.text-desenvolvimento{
     margin-left: 30px;
     margin-top: 50px;
     overflow: hidden;
@@ -39,10 +72,32 @@ main {
     padding-right: 100px;
 }
 
-.text-sobre-proj h2{
+.text-desenvolvimento h2{
     font-size: 36px;
     margin-left: 30px;
 }
+
+.idealizadores {
+    display: flex;
+    width: 100vw;
+    height: 500px;
+    background-color: #1578BC;
+    color: white;
+}
+
+.text-idealizadores{
+    margin-left: 30px;
+    margin-top: 50px;
+    overflow: hidden;
+    margin-right: 70px;
+    padding-right: 100px;
+}
+
+.text-idealizadores h2{
+    font-size: 36px;
+    margin-left: 30px;
+}
+
 
 .sub-main {
     display: flex;
@@ -96,7 +151,7 @@ header {
 
 .telaLogin {
     scale: 0;
-    transition: 1s;
+    transition: 0.2s;
     overflow: hidden;
     position: fixed;
     top: 50%;
@@ -115,13 +170,14 @@ header {
     z-index: 100;
     width: 400px;
     height: 440px;
-    background-color:#F7B910;
+    backdrop-filter: blur(80px);
+    border: 0.1px solid rgba(255, 255, 255, 0.527);
     border-radius: 20px;
     display: flex;
     justify-content: center;
     align-items: center;
     scale: 1;
-    transition: 1s;
+    transition: 0.2s;
 }
 
 .telaLogin .formReg.ativoTela {
@@ -157,7 +213,7 @@ header {
 .telaLogin h2 {
     font-size: 32px;
     letter-spacing: -2px;
-    color: #E7F0DC;
+    color: #D91720;
     text-align: center;
 }
 
@@ -175,7 +231,7 @@ header {
     left: 5px;
     transform: translateY(-50%);
     font-size: 16px;
-    color: white;
+    color: #009535;
     pointer-events: none;
     font-weight: 450;
 }
@@ -234,7 +290,7 @@ header {
     border-radius: 20px;
     border: none;
     outline: none;
-    color: #E7F0DC;
+    color: #ffffff;
     background-color: #009535;
     transition: .5s;
     margin-bottom: 20px;
@@ -251,7 +307,7 @@ header {
 .registro {
     font-size: 16px;
     font-weight: 400;
-    color: #E7F0DC;
+    color: #027d2d;
     text-align: center;
 }
 
