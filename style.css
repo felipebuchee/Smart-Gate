@@ -69,7 +69,7 @@ main {
 .desenvolvimento {
     display: flex;
     width: 100vw;
-    height: 700px;
+    height: 850px;
     background-color: #F7B910;
     color: white;
     float: left;
@@ -80,12 +80,13 @@ main {
     margin-right: 70px;
     padding-right: 100px;
     margin-left: 50px;
-    margin-right: 700px;
+    margin-right: 100px;
 }
 
 .text-desenvolvimento h2{
     font-size: 85px;
     margin-top: 50px;
+    
 }
 
 .text-desenvolvimento p {
@@ -95,24 +96,26 @@ main {
 }
 
 .idealizadores {
+
     display: flex;
     width: 100vw;
-    height: 500px;
+    height: 850px;
     background-color: #1578BC;
     color: white;
+    float: left;
 }
 
 .text-idealizadores{
-    margin-left: 30px;
-    margin-top: 50px;
     overflow: hidden;
     margin-right: 70px;
     padding-right: 100px;
+    margin-left: 50px;
+    margin-right: 100px;
 }
 
 .text-idealizadores h2{
-    font-size: 36px;
-    margin-left: 30px;
+    font-size: 85px;
+    margin-top: 50px;
 }
 
 

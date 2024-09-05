@@ -136,11 +136,11 @@
                     e desenvolve um protótipo para um sistema automatizado de controle de acesso, intitulado de
                     Smart Gate, baseado na utilização de tecnologias que permitam o registro e a autorização da
                     entrada e saída dos estudantes.</p>
-                    <p>O sistema proposto também inclui a notificação dos
+                <p>O sistema proposto também inclui a notificação dos
                     responsáveis pelos discentes, informando-os sobre os horários de movimentação dos alunos.
                     Ademais, o projeto prevê a integração com esta plataforma web, visando à facilitação do
                     monitoramento da frequência.</p>
-                    <p>Para a implementação, são empregadas tecnologias como RFID
+                <p>Para a implementação, são empregadas tecnologias como RFID
                     para os cartões de acesso, um software específico para o controle de permissões e uma interface
                     de comunicação que permite o envio de notificações. O sistema também realizará o
                     armazenamento e gerenciamento das informações.</p>
@@ -150,29 +150,67 @@
         <div class="desenvolvimento">
             <div class="text-desenvolvimento">
                 <h2>Desenvolvimento</h2>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt unde sint, alias eius quia corrupti
-                    velit iusto, rem enim consequuntur, molestias assumenda asperiores provident aliquid labore quisquam
-                    dicta animi error illo reprehenderit modi aspernatur? Debitis ducimus consequatur animi officiis
-                    deleniti dicta architecto in quod, mollitia quos quas aliquam voluptatum hic quaerat distinctio
-                    quibusdam dolore provident! Laboriosam, cupiditate nesciunt autem et id porro libero illo dolorem
-                    tenetur dolorum fugiat aperiam, non necessitatibus distinctio, veniam similique earum dicta nobis
-                    voluptates. Ullam, delectus quod autem nobis porro est exercitationem amet nihil? Harum totam ut,
-                    sapiente aperiam reprehenderit reiciendis quis debitis asperiores eaque vero.</p>
+                <p>Seguindo o protocolo metodológico, após a identificação do problema, por meio da observação da rotina
+                    escolar na instituição e a definição dos resultados esperados, passou-se à etapa de Projeto e
+                    Desenvolvimento do artefato. Neste momento, a partir de experimentações e de leituras de projetos
+                    similares, realizou-se o levantamento dos requisitos necessários para o projeto. É importante
+                    destacar que o projeto em questão é composto por duas aplicações que funcionam de forma orquestrada,
+                    trocando mensagens entre si, com o intuito de realizar a gestão de acesso dos estudantes:
+                    dispositivos físicos (hardware); aplicação computacional (backend).</p>
+                <p>Assim, para alcançar os objetivos propostos, o projeto e implementação do sistema apresentado por
+                    este trabalho, consistiu, de forma resumida, na configuração e construção de um hardware, composto
+                    principalmente por um microcontrolador arduino, além de sensores para leitura das tags RFID's. Foram
+                    adicionados leds para indicação visual de permissões de acesso. Leds vermelhos indicam restrições ao
+                    realizar o acesso e leds verdes indicam conformidade com o acesso.
+                    Os dados obtidos, foram enviados para uma outra aplicação (backend), programada em linguagem PHP,
+                    que os processa e os armazena em um meio adequado.</p>
+
+                <p>Os resultados parciais da pesquisa indicam que o conjunto de tecnologias selecionadas, tais como o
+                    Arduino, e o uso de RFID, além da programação web com PHP, estão se mostrando eficazes na construção
+                    do sistema de controle de acesso escolar.</p>
+                <p>Durante as etapas iniciais de prototipagem, foram realizados o desenvolvimento, de forma isolada do
+                    hardware validando as leituras das tags. Atualmente, o projeto avançou para a fase de codificação do
+                    sistema, que é crucial para o desenvolvimento das funcionalidades principais, como a autenticação e
+                    gestão dos acessos, o registro detalhado de entradas e saídas dos alunos, e a configuração de
+                    notificações automáticas para os responsáveis em tempo real. Durante essa etapa, identificou-se que
+                    a codificação envolve desafios complexos, tais como a integração com o hardware, e a garantia de uma
+                    interface de usuário intuitiva e acessível.</p>
+                <p>Embora o sistema ainda esteja em desenvolvimento, as etapas realizadas até agora fornecem uma boa
+                    base para a conclusão do projeto. A próxima fase incluirá testes em um ambiente escolar real,
+                    provavelmente controlando o acesso ao Laboratório Maker do campus, onde o sistema será avaliado
+                    quanto à sua eficácia, segurança, e impacto na gestão escolar. Esses testes serão fundamentais para
+                    identificar ajustes e melhorias, visando a implementação final de um sistema que possa ser adotado
+                    amplamente em instituições educacionais.
+                </p>
             </div>
         </div>
 
         <div class="idealizadores">
             <div class="text-idealizadores">
                 <h2>Idealizadores</h2>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt unde sint, alias eius quia corrupti
-                    velit iusto, rem enim consequuntur, molestias assumenda asperiores provident aliquid labore quisquam
-                    dicta animi error illo reprehenderit modi aspernatur? Debitis ducimus consequatur animi officiis
-                    deleniti dicta architecto in quod, mollitia quos quas aliquam voluptatum hic quaerat distinctio
-                    quibusdam dolore provident! Laboriosam, cupiditate nesciunt autem et id porro libero illo dolorem
-                    tenetur dolorum fugiat aperiam, non necessitatibus distinctio, veniam similique earum dicta nobis
-                    voluptates. Ullam, delectus quod autem nobis porro est exercitationem amet nihil? Harum totam ut,
-                    sapiente aperiam reprehenderit reiciendis quis debitis asperiores eaque vero.</p>
             </div>
+
+            <div class="slider-idealizadores">
+
+                <div class="slides">
+                    <!--radio buttons-->
+                    <input type="radio" name="radio-btn" id="radio1">
+                    <input type="radio" name="radio-btn" id="radio2">
+                    <input type="radio" name="radio-btn" id="radio3">
+                    <input type="radio" name="radio-btn" id="radio4">
+                    <!--fim radio buttons-->
+
+
+                    <!--imagens do slide-->
+                    <div class="slide">
+                        <h3>Jefferson de Oliveira Chaves</h3>
+                        <h4>Orientador do projeto</h4>
+                    </div>
+                    <!--fim imagens do slide-->
+                </div>
+
+            </div>
+
         </div>
     </main>
 
