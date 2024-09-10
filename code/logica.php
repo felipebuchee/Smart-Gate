@@ -1,32 +1,31 @@
 <?php 
-
-$catraca = "false";
-
-    $pergunta = readline("Digite um número (1) Abrir e (2) Fechar\n");
-
-
-if ($pergunta == 1) {
-    $catraca = "true";
-    abrir($catraca);
+$catraca = null;
+function inicial(){
+    global $catraca;
+    if($catraca == null){
+        system('clear');
+        $pergunta = readline("Digite um número (1) Abrir e (2) Fechar: ");
+        switch($pergunta){
+            case 1:abrir();inicial();break;
+            case 2:fechar();inicial();break;
+            default:inicial();break;
+        }
+    }
 }
-
-if ($pergunta == 2) {
-    $catraca = "false";
-    fechar($catraca);
-}
-
-function fechar($catraca){
-while ($catraca == "false") {
+function fechar(){
+    $catraca = false;
+    //parte para enviar para o dispositivo
     print("Portão fechado\n");
     sleep(2);
-    $catraca = "true";
-    }
+    $catraca = null;
+    
 }
-
-function abrir($catraca){
-while ($catraca == "true") {
+function abrir(){
+    $catraca = true;
+    //parte para enviar para o dispositivo
     print("Portão Aberto\n");
     sleep(2);
-    $catraca = "false";
-    }
+    $catraca = null;
 }
+inicial();
+?>
