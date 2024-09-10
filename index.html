@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Smart Gate</title>
-    <link rel="shortcut icon" type="imagex/png" href="/imagens/moon-stars-fill.ico">
+    <link rel="shortcut icon" type="imagex/png" href="/image/smart-gate-ico.ico">
     <link rel="stylesheet" href="style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -31,7 +31,7 @@
         </div> <!--botao expandir-->
         <ul>
             <li class="item-menu ativo">
-                <a href="#">
+                <a href="index.html">
                     <span class="icon"><i class="bi bi-house"></i></span>
                     <span class="txt-link">Ínicio</span>
                 </a>
@@ -43,7 +43,7 @@
                 </a>
             </li>
             <li class="item-menu">
-                <a href="#">
+                <a href="configuracoes.html">
                     <span class="icon"><i class="bi bi-gear"></i></span>
                     <span class="txt-link">Configurações</span>
                 </a>
@@ -58,15 +58,15 @@
 
             <div class="form-log"> <!--formulario login-->
                 <h2>Login</h2>
-                <form action="./code/formulario.php" method="POST">
+                <form action="./code/formulariologin.php" method="POST">
                     <div class="input-box">
                         <span class="icon-log"><i class="bi bi-envelope"></i></span>
-                        <input type="Email">
+                        <input type="Email" name="email">
                         <label>Email</label> <!--campo email-->
                     </div>
                     <div class="input-box">
                         <span class="icon-log"><i class="bi bi-key"></i></i></span>
-                        <input type="password">
+                        <input type="password" name="senha">
                         <label>Senha</label> <!--campo senha-->
                     </div>
 
@@ -82,31 +82,31 @@
             </div>
 
 
-            <div class="formReg">
+            <div class="formReg"> <!--formulario registro-->
                 <h2>Registro</h2>
-                <form action="#">
+                <form action="./code/formulariocadastro.php" method="POST">
 
                     <div class="input-box">
                         <span class="icon-log"><i class="bi bi-person"></i></span>
-                        <input type="text">
+                        <input type="text" name="nome">
                         <label>Nome</label>
                     </div>
 
                     <div class="input-box">
                         <span class="icon-log"><i class="bi bi-bookmark"></i></span>
-                        <input type="number">
+                        <input type="number" name="matricula">
                         <label>Matrícula</label>
                     </div>
 
                     <div class="input-box">
                         <span class="icon-log"><i class="bi bi-envelope"></i></span>
-                        <input type="Email">
+                        <input type="Email" name="email">
                         <label>Email</label>
                     </div>
 
                     <div class="input-box">
                         <span class="icon-log"><i class="bi bi-key"></i></i></span>
-                        <input type="password">
+                        <input type="password" name="senha">
                         <label>Senha</label>
                     </div>
 

@@ -355,6 +355,10 @@ nav.menu-lat {
     z-index: 99;
 }
 
+nav.menu-lat ul{
+    padding: 0;
+}
+
 nav.menu-lat.expandir {
     width: 300px;
     transition: 1s;
