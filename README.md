@@ -41,10 +41,10 @@ Se você deseja contribuir para o desenvolvimento do Smart Gate, por favor, siga
 **Contato**
 ------------
 
-Jefferson: jefferson.chaves@ifpr.edu.br
-Felipe: felipe.buche.tds2023@gmail.com
-Sarah: sarah.elizabete.tds2023@gmail.com
-Walmonn: walmonn.eduardo.tds2023@gmail.com
+* Jefferson: jefferson.chaves@ifpr.edu.br
+* Felipe: felipe.buche.tds2023@gmail.com
+* Sarah: sarah.elizabete.tds2023@gmail.com
+* Walmonn: walmonn.eduardo.tds2023@gmail.com
 
 **Agradecimentos**
 -----------------
