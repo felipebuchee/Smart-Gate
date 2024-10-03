@@ -189,39 +189,68 @@
             </div>
         </div>
 
-        <div class="idealizadores">
+        <div class="slider">
+
             <div class="text-idealizadores">
                 <h2>Idealizadores</h2>
             </div>
 
-            <div class="slider-idealizadores">
+            <div class="slider-content">
+                <input type="radio" name="btn-radio" id="radio1">
+                <input type="radio" name="btn-radio" id="radio2">
+                <input type="radio" name="btn-radio" id="radio3">
+                <input type="radio" name="btn-radio" id="radio4">
 
-                <div class="slides">
-                    <!--radio buttons-->
-                    <input type="radio" name="radio-btn" id="radio1">
-                    <input type="radio" name="radio-btn" id="radio2">
-                    <input type="radio" name="radio-btn" id="radio3">
-                    <input type="radio" name="radio-btn" id="radio4">
-                    <!--fim radio buttons-->
-
-
-                    <!--imagens do slide-->
-                    <div class="slide">
-                        <h3>Jefferson de Oliveira Chaves</h3>
-                        <h4>Orientador do projeto</h4>
-                    </div>
-                    <!--fim imagens do slide-->
+                <div class="slide-box primeiro">
+                    <h3>Jefferson Chaves</h3>
+                    <h4>Orientador do projeto</h4>
                 </div>
 
-            </div>
+                <div class="slide-box">
+                    <h3>Sarah Elizabete</h3>
+                    <h4>Responsável de Hardware</h4>
+                </div>
 
+                <div class="slide-box">
+                    <h3>Felipe Buche</h3>
+                    <h4>Responsável de Front-End</h4>
+                </div>
+
+                <div class="slide-box">
+                    <h3>Walmonn Eduardo</h3>
+                    <h4>Responsável de Back-End</h4>
+                </div>
+
+                <div class="nav-auto">
+                    <div class="auto-btn1"></div>
+                    <div class="auto-btn2"></div>
+                    <div class="auto-btn3"></div>
+                    <div class="auto-btn4"></div>
+                </div>
+
+                    <div class="nav-manual">
+                        <label for="radio1" class="manual-btn"></label>
+                        <label for="radio2" class="manual-btn"></label>
+                        <label for="radio3" class="manual-btn"></label>
+                        <label for="radio4" class="manual-btn"></label>
+                </div>
+            </div>
         </div>
+
+
+<!--mensgaem de cookies-->
+        <div id="cookie-banner" class="cookie-banner">
+            <p>Usamos cookies para melhorar os sistemas do nosso aplicativo. Ao continuar navegando, você concorda com o uso das informações coletadas.</p>
+            <button id="accept-cookies">Aceitar</button>
+        </div>
+
     </main>
 
     <script src="menu.js"></script>
     <script src="expand.js"></script>
     <script src="mudarLogin.js"></script>
     <script src="fecharMenu.js"></script>
+    <script src="cookie.js"></script>
 </body>
 
 </html>

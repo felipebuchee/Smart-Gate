@@ -1,422 +1,585 @@
+/*Para esse código, é recomendável ter a extensão "Better Comments", de Aaron Bond instalada!*/
+/*https://marketplace.visualstudio.com/items?itemName=aaron-bond.better-comments*/
 
+/*LEGENDA!!! */
+/**TITULOS INDICANDO INICIO E FIM DE CADA PARTE DO CODIGO */
+/*!PRAQ SERVE AQUELA PARTE DO CODIGO*/
+/*?CODIGO EM FASE DE TESTES*/
+/*TODO COMENTARIO DE DESENVOLVEDOR*/
+
+
+
+/**CORES OFICIAIS DO SITE */
 /*#F7B910 AMARELO*/
 /*#D91720 VERMELHO*/
 /*#1578BC AZUL*/
 /*#009535 VERDE*/
 
+/**INICIO ESTILIZACOES GERAIS */
 * {
-    font-family: poppins;
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-
+	font-family: poppins;
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
 }
 
 body {
-    display: flex;
-    justify-content: center;
-    min-height: 100vh;
-    overflow-x: hidden;
+	display: flex;
+	justify-content: center;
+	min-height: 100vh;
+	overflow-x: hidden;
 }
 
 main {
-    z-index: 0;
-    display: block;
+	z-index: 0;
+	display: block;
 }
 
-.imagem-catraca{
-    position: absolute;
-    width: 100vw;
-    height: 100vh;
-    background-color: transparent;
+/**FIM ESTILIZACOES GERAIS */
+
+/**INICIO ESTILIZACOES DA IMAGEM DA CATRACA */
+.imagem-catraca {
+	position: absolute;
+	/*TODO PELO AMOR DE DEUS NAO MEXE NESSE POSITION */
+	width: 100vw;
+	height: 100vh;
+	background-color: transparent;
 }
 
-.imagem-catraca img{
-    float: right;
-    height: 900px;
-    background-color: transparent;
+.imagem-catraca img {
+	float: right;
+	height: 900px;
+	background-color: transparent;
 }
 
+/**FIM ESTILIZACOES DA IMAGEM DA CATRACA */
 
 
+/**INICIO ESTILIZACOES DA SECAO DE TEXTO */
 .sobre-proj {
-    display: flex;
-    width: 100vw;
-    height: 700px;
-    background-color: white ;
-    color: #D91720;
-    float: left;
+	display: flex;
+	width: 100vw;
+	height: 700px;
+	background-color: white;
+	color: #D91720;
+	float: left;
 }
 
-.text-sobre-proj{
-    overflow: hidden;
-    margin-right: 70px;
-    padding-right: 100px;
-    margin-left: 50px;
-    margin-right: 700px;
+.text-sobre-proj {
+	overflow: hidden;
+	margin-right: 70px;
+	padding-right: 100px;
+	margin-left: 50px;
+	margin-right: 700px;
 }
 
-.text-sobre-proj h2{
-    font-size: 85px;
-    margin-top: 50px;
+.text-sobre-proj h2 {
+	font-size: 85px;
+	margin-top: 50px;
 }
 
 .text-sobre-proj p {
-    display: flex;
-    justify-content: left;
-    font-size: 18px;
+	display: flex;
+	justify-content: left;
+	font-size: 18px;
 }
 
 .desenvolvimento {
-    display: flex;
-    width: 100vw;
-    height: 850px;
-    background-color: #F7B910;
-    color: white;
-    float: left;
+	display: flex;
+	width: 100vw;
+	height: 850px;
+	background-color: #F7B910;
+	color: white;
+	float: left;
 }
 
-.text-desenvolvimento{
-    overflow: hidden;
-    margin-right: 70px;
-    padding-right: 100px;
-    margin-left: 50px;
-    margin-right: 100px;
+.text-desenvolvimento {
+	overflow: hidden;
+	margin-right: 70px;
+	padding-right: 100px;
+	margin-left: 50px;
+	margin-right: 100px;
 }
 
-.text-desenvolvimento h2{
-    font-size: 85px;
-    margin-top: 50px;
-    
+.text-desenvolvimento h2 {
+	font-size: 85px;
+	margin-top: 50px;
+
 }
 
 .text-desenvolvimento p {
-    display: flex;
-    justify-content: left;
-    font-size: 18px;
+	display: flex;
+	justify-content: left;
+	font-size: 18px;
 }
 
 .idealizadores {
-
-    display: flex;
-    width: 100vw;
-    height: 850px;
-    background-color: #1578BC;
-    color: white;
-    float: left;
+	display: flex;
+	width: 100vw;
+	height: 850px;
+	background-color: #1578BC;
+	color: white;
+	float: left;
 }
 
-.text-idealizadores{
-    overflow: hidden;
-    margin-right: 70px;
-    padding-right: 100px;
-    margin-left: 50px;
-    margin-right: 100px;
+.text-idealizadores {
+	overflow: hidden;
+	margin-right: 70px;
+	padding-right: 100px;
+	margin-left: 50px;
+	margin-right: 100px;
 }
 
-.text-idealizadores h2{
-    font-size: 85px;
-    margin-top: 50px;
+.text-idealizadores h2 {
+	font-size: 85px;
+	margin-top: 50px;
+	padding-bottom: 10px;
 }
 
+/**FIM ESTILIZACOES DA SECAO DE TEXTO */
 
+
+/**INICIO SUB-MAIN */
 .sub-main {
-    display: flex;
-    align-items: center;
-    padding-left: 200px;
+	/*TODO sub-main é um tipo de classe que eu criei exclusivamente pra guardar a tela de login flutuante sem estar necessariamente no main, pois estava dando muito bug */
+	display: flex;
+	align-items: center;
+	padding-left: 200px;
 }
 
+/**FIM SUB-MAIN */
+
+/**INICIO LOGIN */
 header {
-    position: fixed;
-    top: 0;
-    right: 0;
-    width: 100%;
-    background: transparent;
-    display: flex;
-    justify-content: flex-end;
-    align-items: center;
-    z-index: 98;
+	position: fixed;
+	top: 0;
+	right: 0;
+	width: 100%;
+	background: transparent;
+	display: flex;
+	justify-content: flex-end;
+	align-items: center;
+	z-index: 98;
 }
 
 .telaLogin .fechar {
-    position: absolute;
-    top: 0;
-    right: 0;
-    width: 45px;
-    height: 45px;
-    font-size: 20px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    cursor: pointer;
+	position: absolute;
+	top: 0;
+	right: 0;
+	width: 45px;
+	height: 45px;
+	font-size: 20px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	cursor: pointer;
 }
 
 .login button {
-    width: 130px;
-    height: 50px;
-    border-radius: 10px;
-    margin: 20px 15px 0 0;
-    cursor: pointer;
-    font-size: 15px;
-    background: #1578BC;
-    color: #E7F0DC;
-    transition: .5s;
-    border: none;
+	width: 130px;
+	height: 50px;
+	border-radius: 10px;
+	margin: 20px 15px 0 0;
+	cursor: pointer;
+	font-size: 15px;
+	background: #1578BC;
+	color: #E7F0DC;
+	transition: .5s;
+	border: none;
 }
 
 .login button:hover {
-    background: #12639a;
-    transition: .5s;
-    transform: scale(1.05);
+	background: #12639a;
+	transition: .5s;
+	transform: scale(1.05);
 }
 
 .telaLogin {
-    scale: 0;
-    transition: 0.2s;
-    overflow: hidden;
-    position: fixed;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    z-index: 100;
+	scale: 0;
+	transition: 0.2s;
+	overflow: hidden;
+	position: fixed;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	z-index: 100;
 
 }
 
 .telaLogin.ativoTela {
-    overflow: hidden;
-    position: fixed;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    z-index: 100;
-    width: 400px;
-    height: 440px;
-    backdrop-filter: blur(80px);
-    border: 0.1px solid rgba(255, 255, 255, 0.527);
-    border-radius: 20px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    scale: 1;
-    transition: 0.2s;
+	overflow: hidden;
+	position: fixed;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	z-index: 100;
+	width: 400px;
+	height: 440px;
+	backdrop-filter: blur(80px);
+	border: 0.1px solid rgba(255, 255, 255, 0.527);
+	border-radius: 20px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	scale: 1;
+	transition: 0.2s;
 }
 
 .telaLogin .formReg.ativoTela {
-    width: 100%;
-    padding: 40px;
+	width: 100%;
+	padding: 40px;
 }
 
 .telaLogin.ativoMenu {
-    height: 600px;
+	height: 600px;
 }
 
 .telaLogin.ativoMenu .form-log {
-    transition: 1s;
-    transform: translate(400px);
+	transition: 1s;
+	transform: translate(400px);
 }
 
 .telaLogin.ativoMenu .formReg {
-    transition: 1s;
-    transform: translate(0px);
+	transition: 1s;
+	transform: translate(0px);
 }
 
 .telaLogin .form-log {
-    transition: 0.5s;
-    transform: translate(0);
+	transition: 0.5s;
+	transform: translate(0);
 }
 
 .telaLogin .formReg {
-    position: absolute;
-    transform: translate(-400px);
-    transition: 0.5s;
+	position: absolute;
+	transform: translate(-400px);
+	transition: 0.5s;
 }
 
 .telaLogin h2 {
-    font-size: 32px;
-    letter-spacing: -2px;
-    color: #D91720;
-    text-align: center;
+	font-size: 32px;
+	letter-spacing: -2px;
+	color: #D91720;
+	text-align: center;
 }
 
 .input-box {
-    position: relative;
-    width: 100%;
-    height: 50px;
-    border-bottom: #0c0f09 2px solid;
-    margin: 30px 0;
+	position: relative;
+	width: 100%;
+	height: 50px;
+	border-bottom: #0c0f09 2px solid;
+	margin: 30px 0;
 }
 
 .input-box label {
-    position: absolute;
-    top: 50%;
-    left: 5px;
-    transform: translateY(-50%);
-    font-size: 16px;
-    color: #009535;
-    pointer-events: none;
-    font-weight: 450;
+	position: absolute;
+	top: 50%;
+	left: 5px;
+	transform: translateY(-50%);
+	font-size: 16px;
+	color: #009535;
+	pointer-events: none;
+	font-weight: 450;
 }
 
 .input-box input:focus~label,
 .input-box input:valid~label {
-    top: -5px;
+	top: -5px;
 }
 
 .input-box input {
-    width: 100%;
-    height: 100%;
-    border: none;
-    outline: none;
-    background: transparent;
-    font-size: 16px;
-    color: rgb(0, 0, 0);
-    font-weight: 200;
-    padding: 0 35px 0 5px;
+	width: 100%;
+	height: 100%;
+	border: none;
+	outline: none;
+	background: transparent;
+	font-size: 16px;
+	color: rgb(0, 0, 0);
+	font-weight: 200;
+	padding: 0 35px 0 5px;
 }
 
 .input-box .icon-log {
-    position: absolute;
-    right: 8px;
-    font-size: 20px;
-    color: #D91720;
-    line-height: 57px;
+	position: absolute;
+	right: 8px;
+	font-size: 20px;
+	color: #D91720;
+	line-height: 57px;
 }
 
 .gerenc-senha {
-    font-size: 14px;
-    color: #027d2d;
-    font-weight: 500;
-    margin: -25px 0 25px;
-    display: flex;
-    justify-content: space-between;
+	font-size: 14px;
+	color: #027d2d;
+	font-weight: 500;
+	margin: -25px 0 25px;
+	display: flex;
+	justify-content: space-between;
 }
 
 .gerenc-senha label input {
-    accent-color: #009535;
-    margin-right: 3px;
+	accent-color: #009535;
+	margin-right: 3px;
 }
 
 .gerenc-senha a {
-    color: #027d2d;
-    text-decoration: none;
+	color: #027d2d;
+	text-decoration: none;
 }
 
 .gerenc-senha a:hover {
-    text-decoration: underline;
+	text-decoration: underline;
 }
 
 .btnSubmit {
-    width: 100%;
-    height: 50px;
-    border-radius: 20px;
-    border: none;
-    outline: none;
-    color: #ffffff;
-    background-color: #009535;
-    transition: .5s;
-    margin-bottom: 20px;
-    font-weight: 500;
-    cursor: pointer;
+	width: 100%;
+	height: 50px;
+	border-radius: 20px;
+	border: none;
+	outline: none;
+	color: #ffffff;
+	background-color: #009535;
+	transition: .5s;
+	margin-bottom: 20px;
+	font-weight: 500;
+	cursor: pointer;
 }
 
 .btnSubmit:hover {
-    background-color: #027d2d;
-    transform: scale(1.05);
-    transition: .5s;
+	background-color: #027d2d;
+	transform: scale(1.05);
+	transition: .5s;
 }
 
 .registro {
-    font-size: 16px;
-    font-weight: 400;
-    color: #027d2d;
-    text-align: center;
+	font-size: 16px;
+	font-weight: 400;
+	color: #027d2d;
+	text-align: center;
 }
 
 .registro p a {
-    text-decoration: none;
-    color: #131b0d;
-    font-weight: 600;
+	text-decoration: none;
+	color: #131b0d;
+	font-weight: 600;
 }
 
 .registro p a:hover {
-    text-decoration: underline;
+	text-decoration: underline;
 }
 
+/**FIM LOGIN */
+
+/**INICIO MENU LATERAL */
 nav.menu-lat {
-    width: 100px;
-    height: 100%;
-    background-color: #009535;
-    box-shadow: 3px 0 0 #009535;
-    position: fixed;
-    top: 0;
-    left: 0;
-    overflow: hidden;
-    transition: 1s;
-    z-index: 99;
+	width: 100px;
+	height: 100%;
+	background-color: #009535;
+	box-shadow: 3px 0 0 #009535;
+	position: fixed;
+	top: 0;
+	left: 0;
+	overflow: hidden;
+	transition: 1s;
+	z-index: 99;
 }
 
-nav.menu-lat ul{
-    padding: 0;
+nav.menu-lat ul {
+	padding: 0;
 }
 
 nav.menu-lat.expandir {
-    width: 300px;
-    transition: 1s;
+	width: 300px;
+	transition: 1s;
 }
 
 .btn-expnd {
-    width: 100%;
-    padding-left: 20px;
+	width: 100%;
+	padding-left: 20px;
 }
 
 .btn-expnd>i {
-    color: #E7F0DC;
-    font-size: 36px;
-    cursor: pointer;
-    margin: 10px;
+	color: #E7F0DC;
+	font-size: 36px;
+	cursor: pointer;
+	margin: 10px;
 }
 
 ul {
-    height: 100%;
-    list-style-type: none;
+	height: 100%;
+	list-style-type: none;
 }
 
 ul li.item-menu {
-    transition: 0.5s;
+	transition: 0.5s;
 }
 
 ul li.ativo {
-    background-color: #009535;
+	background-color: #009535;
 }
 
 ul li.item-menu:hover {
-    background: #027d2d;
+	background: #027d2d;
 }
 
 ul li.item-menu a {
-    color: #E7F0DC;
-    text-decoration: none;
-    font-size: 20px;
-    padding: 20px 4%;
-    display: flex;
-    line-height: 40px;
+	color: #E7F0DC;
+	text-decoration: none;
+	font-size: 20px;
+	padding: 20px 4%;
+	display: flex;
+	line-height: 40px;
 
 }
 
 ul li.item-menu a .txt-link {
-    margin-left: 80px;
-    transition: 1s;
-    opacity: 0;
+	margin-left: 80px;
+	transition: 1s;
+	opacity: 0;
 }
 
 nav.menu-lat.expandir .txt-link {
-    margin-left: 40px;
-    transition: 1s;
-    opacity: 100%;
+	margin-left: 40px;
+	transition: 1s;
+	opacity: 100%;
 }
 
 ul li.item-menu a .icon>i {
-    font-size: 25px;
-    margin-left: 15px;
-    padding-left: 15px;
+	font-size: 25px;
+	margin-left: 15px;
+	padding-left: 15px;
 }
+
+/**FIM  MENU LATERAL*/
+
+
+
+/** INICIO SLIDES DO FINAL DA PÁGINA*/
+.slider {
+	margin: 0 auto;
+	padding: 0 !important;
+	background-color: #1578BC;
+	width: 100%;
+	height: auto;
+	color: white;
+	overflow: hidden;
+}
+
+.slider-content {
+	width: 400%;
+	height: auto;
+	display: flex;
+	margin-right: 70px;
+	padding-right: 100px;
+	margin-left: 50px;
+	margin-right: 700px;
+}
+
+.slider-content input {
+	display: none;
+}
+
+.slide-box {
+	width: 25%;
+	height: auto;
+	position: relative;
+	text-align: left;
+}
+
+.slide-box h4 {
+	margin-bottom: 50px;
+}
+
+.nav-manual,
+.nav-auto {
+	/*TODO acho que um codigo nunca me deu tanto trabalho pra arrumar igual essas malditas bolinhas */
+	position: absolute;
+	top: auto;
+	left: 50%;
+	padding-right: 200px;
+	gap: 5px;
+	display: flex;
+	width: 300px;
+	margin-top: 100px;
+	justify-content: center;
+	background-color: #1578BC;
+
+}
+
+.manual-btn {
+	position: relative;
+	border: 2px solid white;
+	cursor: pointer;
+	width: 25px;
+	height: 25px;
+	border-radius: 50px;
+	margin-bottom: 15px;
+	transition: 0.3s;
+}
+
+.manual-btn:hover,
+.nav-auto:hover {
+	background-color: white;
+	transition: 0.3s;
+}
+
+/**FIM SLIDES DO FINAL DA PÁGINA*/
+
+
+
+/** INICIO COOKIES */
+.cookie-banner {
+	position: fixed;
+	bottom: 0;
+	width: 100%;
+	background-color: #212121;
+	color: white;
+	text-align: center;
+	padding: 15px;
+	display: none;
+}
+
+.cookie-banner p {
+	margin: 0;
+	display: inline-block;
+}
+
+#accept-cookies {
+	background-color: #009535;
+	border-radius: 10px;
+	color: white;
+	border: none;
+	padding: 10px 20px;
+	margin-left: 20px;
+	cursor: pointer;
+	transition: 0.5s
+}
+
+#accept-cookies:hover {
+	background-color: #027d2d;
+	transition: 0.5s
+}
+
+/** FIM COOKIES */
+
+
+/** INICIO SCROLLBAR*/
+::-webkit-scrollbar {
+	width: 10px;
+}
+
+::-webkit-scrollbar-track {
+	background: #ffffff;
+	border-radius: 5px;
+}
+
+
+::-webkit-scrollbar-thumb {
+	background-color: #027d2d;
+	border-radius: 10px;
+	border: 3px solid #f1f1f1;
+}
+
+::-webkit-scrollbar-thumb:hover {
+	background-color: #004819;
+}
+
+/** FIM SCROLLBAR*/
