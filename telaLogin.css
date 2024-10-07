@@ -7,8 +7,6 @@
 /*?CODIGO EM FASE DE TESTES*/
 /*TODO COMENTARIO DE DESENVOLVEDOR*/
 
-
-
 /**CORES OFICIAIS DO SITE */
 /*#F7B910 AMARELO*/
 /*#D91720 VERMELHO*/
@@ -28,6 +26,7 @@ body {
 	justify-content: center;
 	min-height: 100vh;
 	overflow-x: hidden;
+    background: url(https://muraldoparana.com.br/wp-content/uploads/2023/06/ifpr-foz-1.jpeg);
 }
 
 main {
@@ -41,120 +40,6 @@ main {
 }
 
 /**FIM ESTILIZACOES GERAIS */
-
-/**INICIO ESTILIZACOES DA IMAGEM DA CATRACA */
-.imagem-catraca {
-	position: absolute;
-	/*TODO PELO AMOR DE DEUS NAO MEXE NESSE POSITION */
-	width: 100vw;
-	height: 100vh;
-	background-color: transparent;
-}
-
-.imagem-catraca img {
-	float: right;
-	height: 900px;
-	background-color: transparent;
-}
-
-/**FIM ESTILIZACOES DA IMAGEM DA CATRACA */
-
-
-/**INICIO ESTILIZACOES DA SECAO DE TEXTO */
-.sobre-proj {
-	display: flex;
-	width: 100vw;
-	height: 700px;
-	background-color: white;
-	color: #D91720;
-	float: left;
-}
-
-.text-sobre-proj {
-	overflow: hidden;
-	margin-right: 70px;
-	padding-right: 100px;
-	margin-left: 50px;
-	margin-right: 700px;
-}
-
-.text-sobre-proj h2 {
-	font-size: 85px;
-	margin-top: 50px;
-}
-
-.text-sobre-proj p {
-	display: flex;
-	justify-content: left;
-	font-size: 18px;
-}
-
-.desenvolvimento {
-	display: flex;
-	width: 100vw;
-	height: 850px;
-	background-color: #F7B910;
-	color: white;
-	float: left;
-}
-
-.text-desenvolvimento {
-	overflow: hidden;
-	margin-right: 70px;
-	padding-right: 100px;
-	margin-left: 50px;
-	margin-right: 100px;
-}
-
-.text-desenvolvimento h2 {
-	font-size: 85px;
-	margin-top: 50px;
-
-}
-
-.text-desenvolvimento p {
-	display: flex;
-	justify-content: left;
-	font-size: 18px;
-}
-
-.idealizadores {
-	display: flex;
-	width: 100vw;
-	background-color: #1578BC;
-	color: white;
-	float: left;
-}
-
-.text-idealizadores {
-	background-color: #1578BC;
-	color: white;
-	overflow: hidden;
-	margin-right: 70px;
-	padding-right: 100px;
-	margin-left: 50px;
-	margin-right: 100px;
-}
-
-.text-idealizadores h2 {
-	background-color: #1578BC;
-	font-size: 85px;
-	margin-top: 50px;
-	padding-bottom: 10px;
-}
-
-/**FIM ESTILIZACOES DA SECAO DE TEXTO */
-
-
-/**INICIO SUB-MAIN */
-.sub-main {
-	/*TODO sub-main é um tipo de classe que eu criei exclusivamente pra guardar a tela de login flutuante sem estar necessariamente no main, pois estava dando muito bug */
-	display: flex;
-	align-items: center;
-	padding-left: 200px;
-}
-
-/**FIM SUB-MAIN */
 
 /**INICIO LOGIN */
 header {
@@ -222,7 +107,7 @@ header {
 	z-index: 100;
 	width: 400px;
 	height: 440px;
-	backdrop-filter: blur(200px);
+	backdrop-filter: blur(5px);
 	border: 0.1px solid rgba(255, 255, 255, 0.527);
 	border-radius: 20px;
 	display: flex;
@@ -456,62 +341,3 @@ ul li.item-menu a .icon>i {
 }
 
 /**FIM  MENU LATERAL*/
-
-/** INICIO COOKIES */
-.cookie-banner {
-	position: fixed;
-	bottom: 0;
-	width: 100%;
-	background-color: #212121;
-	color: white;
-	text-align: center;
-	padding: 15px;
-	display: none;
-}
-
-.cookie-banner p {
-	margin: 0;
-	display: inline-block;
-}
-
-#accept-cookies {
-	background-color: #009535;
-	border-radius: 10px;
-	color: white;
-	border: none;
-	padding: 10px 20px;
-	margin-left: 20px;
-	cursor: pointer;
-	transition: 0.5s
-}
-
-#accept-cookies:hover {
-	background-color: #027d2d;
-	transition: 0.5s
-}
-
-/** FIM COOKIES */
-
-
-/** INICIO SCROLLBAR*/
-::-webkit-scrollbar {
-	width: 10px;
-}
-
-::-webkit-scrollbar-track {
-	background: #ffffff;
-	border-radius: 5px;
-}
-
-
-::-webkit-scrollbar-thumb {
-	background-color: #027d2d;
-	border-radius: 10px;
-	border: 3px solid #f1f1f1;
-}
-
-::-webkit-scrollbar-thumb:hover {
-	background-color: #004819;
-}
-
-/** FIM SCROLLBAR*/
