@@ -35,6 +35,10 @@ main {
 	display: block;
 }
 
+.selector-for-some-widget { /*TODO bootstrap*/
+	box-sizing: content-box;
+}
+
 /**FIM ESTILIZACOES GERAIS */
 
 /**INICIO ESTILIZACOES DA IMAGEM DA CATRACA */
@@ -116,13 +120,14 @@ main {
 .idealizadores {
 	display: flex;
 	width: 100vw;
-	height: 850px;
 	background-color: #1578BC;
 	color: white;
 	float: left;
 }
 
 .text-idealizadores {
+	background-color: #1578BC;
+	color: white;
 	overflow: hidden;
 	margin-right: 70px;
 	padding-right: 100px;
@@ -131,6 +136,7 @@ main {
 }
 
 .text-idealizadores h2 {
+	background-color: #1578BC;
 	font-size: 85px;
 	margin-top: 50px;
 	padding-bottom: 10px;
@@ -378,7 +384,7 @@ nav.menu-lat {
 	top: 0;
 	left: 0;
 	overflow: hidden;
-	transition: 1s;
+	transition: 0.7s;
 	z-index: 99;
 }
 
@@ -450,79 +456,14 @@ ul li.item-menu a .icon>i {
 
 /**FIM  MENU LATERAL*/
 
-
-
-/** INICIO SLIDES DO FINAL DA PÁGINA*/
-.slider {
-	margin: 0 auto;
-	padding: 0 !important;
-	background-color: #1578BC;
+/**INICIO FOOTER*/
+footer {
+	height: 150px;
 	width: 100%;
-	height: auto;
-	color: white;
 	overflow: hidden;
+	background-color: #212121;
 }
-
-.slider-content {
-	width: 400%;
-	height: auto;
-	display: flex;
-	margin-right: 70px;
-	padding-right: 100px;
-	margin-left: 50px;
-	margin-right: 700px;
-}
-
-.slider-content input {
-	display: none;
-}
-
-.slide-box {
-	width: 25%;
-	height: auto;
-	position: relative;
-	text-align: left;
-}
-
-.slide-box h4 {
-	margin-bottom: 50px;
-}
-
-.nav-manual,
-.nav-auto {
-	/*TODO acho que um codigo nunca me deu tanto trabalho pra arrumar igual essas malditas bolinhas */
-	position: absolute;
-	top: auto;
-	left: 50%;
-	padding-right: 200px;
-	gap: 5px;
-	display: flex;
-	width: 300px;
-	margin-top: 100px;
-	justify-content: center;
-	background-color: #1578BC;
-
-}
-
-.manual-btn {
-	position: relative;
-	border: 2px solid white;
-	cursor: pointer;
-	width: 25px;
-	height: 25px;
-	border-radius: 50px;
-	margin-bottom: 15px;
-	transition: 0.3s;
-}
-
-.manual-btn:hover,
-.nav-auto:hover {
-	background-color: white;
-	transition: 0.3s;
-}
-
-/**FIM SLIDES DO FINAL DA PÁGINA*/
-
+/**FIM FOOTER*/
 
 
 /** INICIO COOKIES */

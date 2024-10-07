@@ -3,7 +3,7 @@
 
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Smart Gate</title>
     <link rel="shortcut icon" type="imagex/png" href="/image/smart-gate-ico.ico">
     <link rel="stylesheet" href="style.css">
@@ -14,9 +14,9 @@
         rel="stylesheet">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
 
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
 
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
 </head>
 
 <body>
@@ -25,10 +25,12 @@
             <button class="btnCadt">Entrar</button>
         </nav>
     </header>
-    <nav class="menu-lat"> <!--menu lateral-->
+    <nav class="menu-lat">
+        <!--menu lateral-->
         <div class="btn-expnd">
             <i class="bi bi-list" id="expand"></i>
-        </div> <!--botao expandir-->
+        </div>
+        <!--botao expandir-->
         <ul>
             <li class="item-menu ativo">
                 <a href="index.html">
@@ -56,23 +58,27 @@
         <div class="telaLogin">
             <span class="fechar"><i class="bi bi-x-lg"></i></span>
 
-            <div class="form-log"> <!--formulario login-->
+            <div class="form-log">
+                <!--formulario login-->
                 <h2>Login</h2>
                 <form action="./code/formulariologin.php" method="POST">
                     <div class="input-box">
                         <span class="icon-log"><i class="bi bi-envelope"></i></span>
                         <input type="Email" name="email">
-                        <label>Email</label> <!--campo email-->
+                        <label>Email</label>
+                        <!--campo email-->
                     </div>
                     <div class="input-box">
                         <span class="icon-log"><i class="bi bi-key"></i></i></span>
                         <input type="password" name="senha">
-                        <label>Senha</label> <!--campo senha-->
+                        <label>Senha</label>
+                        <!--campo senha-->
                     </div>
 
                     <div class="gerenc-senha">
                         <label><input type="checkbox">Lembrar as credenciais</label>
-                        <a href="#">Esqueci a senha</a> <!--esqueci a senha-->
+                        <a href="#">Esqueci a senha</a>
+                        <!--esqueci a senha-->
                     </div>
                     <button type="submit" class="btnSubmit">Entrar</button>
                     <div class="registro">
@@ -82,7 +88,8 @@
             </div>
 
 
-            <div class="formReg"> <!--formulario registro-->
+            <div class="formReg">
+                <!--formulario registro-->
                 <h2>Registro</h2>
                 <form action="./code/formulariocadastro.php" method="POST">
 
@@ -189,60 +196,55 @@
             </div>
         </div>
 
-        <div class="slider">
+        <!--INICIO SLIDES-->
 
+
+        <div class="idealizadores">
             <div class="text-idealizadores">
                 <h2>Idealizadores</h2>
             </div>
+        </div>
 
-            <div class="slider-content">
-                <input type="radio" name="btn-radio" id="radio1">
-                <input type="radio" name="btn-radio" id="radio2">
-                <input type="radio" name="btn-radio" id="radio3">
-                <input type="radio" name="btn-radio" id="radio4">
 
-                <div class="slide-box primeiro">
-                    <h3>Jefferson Chaves</h3>
-                    <h4>Orientador do projeto</h4>
+        <div id="carouselExampleAutoplaying" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img src="image/imagens-slider/jeffinho.jpg" class="d-block w-100" alt="IMG1">
+                </div>
+                <div class="carousel-item">
+                    <img src="image/imagens-slider/buche.jpg" class="d-block w-100" alt="IMG2">
+                </div>
+                <div class="carousel-item">
+                    <img src="image/imagens-slider/walmonn.jpg" class="d-block w-100" alt="IMG3">
                 </div>
 
-                <div class="slide-box">
-                    <h3>Sarah Elizabete</h3>
-                    <h4>Responsável de Hardware</h4>
-                </div>
-
-                <div class="slide-box">
-                    <h3>Felipe Buche</h3>
-                    <h4>Responsável de Front-End</h4>
-                </div>
-
-                <div class="slide-box">
-                    <h3>Walmonn Eduardo</h3>
-                    <h4>Responsável de Back-End</h4>
-                </div>
-
-                <div class="nav-auto">
-                    <div class="auto-btn1"></div>
-                    <div class="auto-btn2"></div>
-                    <div class="auto-btn3"></div>
-                    <div class="auto-btn4"></div>
-                </div>
-
-                    <div class="nav-manual">
-                        <label for="radio1" class="manual-btn"></label>
-                        <label for="radio2" class="manual-btn"></label>
-                        <label for="radio3" class="manual-btn"></label>
-                        <label for="radio4" class="manual-btn"></label>
+                <div class="carousel-item">
+                    <img src="image/imagens-slider/sarah.jpg" class="d-block w-100" alt="IMG3">
                 </div>
             </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleAutoplaying"
+                data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleAutoplaying"
+                data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
         </div>
 
 
-<!--mensgaem de cookies-->
+        <!--mensgaem de cookies-->
         <div id="cookie-banner" class="cookie-banner">
-            <p>Usamos cookies para melhorar os sistemas do nosso aplicativo. Ao continuar navegando, você concorda com o uso das informações coletadas.</p>
+            <p>Usamos cookies para melhorar os sistemas do nosso aplicativo. Ao continuar navegando, você concorda com o
+                uso das informações coletadas.</p>
             <button id="accept-cookies">Aceitar</button>
         </div>
+
+        <footer>
+            teste
+        </footer>
 
     </main>
 
@@ -251,6 +253,12 @@
     <script src="mudarLogin.js"></script>
     <script src="fecharMenu.js"></script>
     <script src="cookie.js"></script>
+    <script src="slider.js"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous"></script>
+
 </body>
 
 </html>
