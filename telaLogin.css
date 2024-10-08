@@ -26,7 +26,7 @@ body {
 	justify-content: center;
 	min-height: 100vh;
 	overflow-x: hidden;
-    background: url(https://muraldoparana.com.br/wp-content/uploads/2023/06/ifpr-foz-1.jpeg);
+    background: url("image/PLACEHOLDER-LOGIN.png")no-repeat center center;
 }
 
 main {
