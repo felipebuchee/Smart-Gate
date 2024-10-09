@@ -44,7 +44,11 @@ main button {
 	font-weight: 700;
 }
 
-a{
+.botoes-login{
+	text-decoration: none;
+}
+
+main a{
 	text-decoration: none;
 }
 
@@ -63,6 +67,16 @@ a{
 
 .portaria{
 	background-color: #F7B910;
+	color: white;
+}
+
+.sepae{
+	background-color: #D91720;
+	color: white;
+}
+
+.responsavel{
+	background-color:#1578BC ;
 	color: white;
 }
 /**FIM ESTILIZACOES DOS BOTOES*/
