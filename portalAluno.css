@@ -1,0 +1,130 @@
+/*Para esse código, é recomendável ter a extensão "Better Comments", de Aaron Bond instalada!*/
+/*https://marketplace.visualstudio.com/items?itemName=aaron-bond.better-comments*/
+
+/*LEGENDA!!! */
+/**TITULOS INDICANDO INICIO E FIM DE CADA PARTE DO CODIGO */
+/*!PRAQ SERVE AQUELA PARTE DO CODIGO*/
+/*?CODIGO EM FASE DE TESTES*/
+/*TODO COMENTARIO DE DESENVOLVEDOR*/
+
+/**CORES OFICIAIS DO SITE */
+/*#F7B910 AMARELO*/
+/*#D91720 VERMELHO*/
+/*#1578BC AZUL*/
+/*#009535 VERDE*/
+
+/**INICIO ESTILIZACOES GERAIS */
+* {
+	font-family: poppins;
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+body {
+	display: flex;
+	justify-content: center;
+	min-height: 100vh;
+	overflow-x: hidden;
+}
+
+main {
+	z-index: 0;
+	display: block;
+}
+
+main button{
+    margin: 50px;
+    padding: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.selector-for-some-widget {
+	/*TODO bootstrap*/
+	box-sizing: content-box;
+}
+/**FIM ESTILIZACOES GERAIS */
+
+/**INICIO MENU LATERAL */
+nav.menu-lat {
+	width: 100px;
+	height: 100%;
+	background-color: #009535;
+	box-shadow: 3px 0 0 #009535;
+	position: fixed;
+	top: 0;
+	left: 0;
+	overflow: hidden;
+	transition: 0.7s;
+	z-index: 99;
+}
+
+nav.menu-lat ul {
+	padding: 0;
+}
+
+nav.menu-lat.expandir {
+	width: 300px;
+	transition: 1s;
+}
+
+.btn-expnd {
+	width: 100%;
+	padding-left: 20px;
+}
+
+.btn-expnd>i {
+	color: #E7F0DC;
+	font-size: 36px;
+	cursor: pointer;
+	margin: 10px;
+}
+
+ul {
+	height: 100%;
+	list-style-type: none;
+}
+
+ul li.item-menu {
+	transition: 0.5s;
+}
+
+ul li.ativo {
+	background-color: #009535;
+}
+
+ul li.item-menu:hover {
+	background: #027d2d;
+}
+
+ul li.item-menu a {
+	color: #E7F0DC;
+	text-decoration: none;
+	font-size: 20px;
+	padding: 20px 4%;
+	display: flex;
+	line-height: 40px;
+
+}
+
+ul li.item-menu a .txt-link {
+	margin-left: 80px;
+	transition: 1s;
+	opacity: 0;
+}
+
+nav.menu-lat.expandir .txt-link {
+	margin-left: 40px;
+	transition: 1s;
+	opacity: 100%;
+}
+
+ul li.item-menu a .icon>i {
+	font-size: 25px;
+	margin-left: 15px;
+	padding-left: 15px;
+}
+
+/**FIM  MENU LATERAL*/
