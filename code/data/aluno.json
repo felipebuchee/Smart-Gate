@@ -7,7 +7,6 @@
         "email": "teste@hotmail.com",
         "tag": "4D 5E 6F"
     },
-
     {
         "nome": "Felipe",
         "numeroMatricula": 20233014447,
@@ -15,9 +14,13 @@
         "senha": 10092007,
         "email": "felipe10buche@gmail.com",
         "tag": "5D 5R 6F"
+    },
+    {
+        "nome": "Felipinho da dz7",
+        "numeroMatricula": 2023565665,
+        "cpf": "12597257908",
+        "senha": 10092007,
+        "email": "marinesprima@gmail.com",
+        "tag": "d7g8u9"
     }
 ]
-
-    
-
-

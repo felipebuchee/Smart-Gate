@@ -2,9 +2,9 @@
 require_once("Pessoa.php");
 class Funcionario extends Pessoa implements \JsonSerializable 
 {
-    private ?int $siap = null; // Siap agora é opcional
-    private bool $adm;
-    private bool $liberar;
+    private ?int $siap = 0; // Siap agora é opcional
+    private bool $adm = false;
+    private bool $liberar = false;
     public static function criarFuncionarios(array $recolherdados) 
     {
         $funcionarios = array();

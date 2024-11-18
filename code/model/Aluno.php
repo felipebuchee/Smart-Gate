@@ -2,6 +2,8 @@
 require_once("Pessoa.php");
 class Aluno extends Pessoa implements \JsonSerializable 
 {
+    private int $numeroMatricula = 0;
+
     public static function criarAlunos(array $recolherdados)
     {
         for($i = 0 ; $i < count($recolherdados) ; $i++)
@@ -27,7 +29,7 @@ class Aluno extends Pessoa implements \JsonSerializable
             'tag' => $this->getTag()
         ];
     }
-    private int $numeroMatricula;
+
     /**
      * Get the value of numeroMatricula
      */

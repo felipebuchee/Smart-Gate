@@ -1,4 +1,9 @@
 <?php
+
+ini_set('display_errors', 1);
+ini_set('display_startup_errors', 1);
+error_reporting(E_ALL);
+
 require_once("model/Aluno.php");
 require_once("model/Funcionario.php");
 
@@ -29,10 +34,8 @@ function cadastrarFuncionario()
             }
             else
             {
-                system("clear");
                 print "Valor inválido!\nNão será possível cadastrar o funcionário!\n\nAperte enter para voltar!";
-                readline("");
-                menu();
+                die;
             }
             if($liberar == 1)
             {
@@ -44,10 +47,8 @@ function cadastrarFuncionario()
             }
             else
             {
-                system("clear");
                 print "Valor inválido!\nNão será possível cadastrar o funcionário!\n\nAperte enter para voltar!";
-                readline("");
-                menu();
+                die;
             }
             if($siap != null)
             {
@@ -57,13 +58,11 @@ function cadastrarFuncionario()
                 }
                 else
                 {
-                    system("clear");
                     print "Valor inválido!\nNão será possível cadastrar o funcionário!\n\nAperte enter para voltar!";
-                    readline("");
-                    menu();
+                    die;
                 }
             }
-            $funcionarios = json_decode(file_get_contents("../data/func.json"),true);
+            $funcionarios = json_decode(file_get_contents("data/func.json"),true);
             if($funcionarios == null)
             {
                 $funcionarios = array();
@@ -85,23 +84,19 @@ function cadastrarFuncionario()
                 $funcionario->setSiap($siap);
             }
             $funcionarios[] = $funcionario;
-            file_put_contents("../data/func.json",json_encode($funcionarios,JSON_PRETTY_PRINT | JSON_UNESCAPED_UNICODE));
+            file_put_contents("data/func.json",json_encode($funcionarios,JSON_PRETTY_PRINT | JSON_UNESCAPED_UNICODE));
 
         }
         else
         {
-            system("clear");
             print "Valor inválido!\nNão será possível cadastrar o funcionário!\n\nAperte enter para voltar!";
-            readline("");
-            menu();
+            die;
         }
     }
     else
     {
-        system("clear");
         print "Valor inválido!\nNão será possível cadastrar o funcionário!\n\nAperte enter para voltar!";
-        readline("");
-        menu();
+        die;
     }
 }
 function cadastrarAluno()
@@ -118,7 +113,7 @@ function cadastrarAluno()
         {
             $senha = intval($senha);
             $num = intval($num);
-            $alunos = json_decode(file_get_contents("../data/aluno.json"),true);
+            $alunos = json_decode(file_get_contents("data/aluno.json"),true);
             if($alunos == null)
             {
                 $alunos = array();
@@ -140,18 +135,14 @@ function cadastrarAluno()
         }
         else
         {
-            system("clear");
             print "Valor inválido!\nNão será possível cadastrar o aluno!\n\nAperte enter para voltar!";
-            readline("");
-            menu();
+            die;
         }
     }
     else
     {
-        system("clear");
         print "Valor inválido!\nNão será possível cadastrar o aluno!\n\nAperte enter para voltar!";
-        readline("");
-        menu();
+        die;
     }
 }
 $tipo = $_POST['tipo'];

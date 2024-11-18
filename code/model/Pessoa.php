@@ -1,11 +1,11 @@
 <?php
 class Pessoa
 {
-    protected string $nome;
-    protected string $cpf;
-    protected int $senha;
-    protected string $email;
-    protected string $tag;
+    protected string $nome = "";
+    protected string $cpf = "";
+    protected int $senha = 0;
+    protected string $email = "";
+    protected string $tag = "";
     
 
     /**

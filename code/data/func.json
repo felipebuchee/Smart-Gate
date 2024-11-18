@@ -5,7 +5,7 @@
         "cpf": "123456789",
         "senha": 15082007,
         "email": "walmonn.eduardo.tds2023@gmail.com",
-        "tag":"1A 2B 2C",
+        "tag": "",
         "adm": true,
         "liberar": true
     },
@@ -15,7 +15,17 @@
         "cpf": "98756419",
         "senha": 10092007,
         "email": "felipe.buche.tds2023@gmail.com",
-        "tag":"4D 5E 6F",
+        "tag": "",
+        "adm": true,
+        "liberar": true
+    },
+    {
+        "nome": "Felipe",
+        "siap": 0,
+        "cpf": "54625146",
+        "senha": 10092007,
+        "email": "area1interact@outlook.com",
+        "tag": "d7g8u9",
         "adm": true,
         "liberar": true
     }
