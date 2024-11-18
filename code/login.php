@@ -3,14 +3,13 @@ require_once("model/Aluno.php");
 require_once("model/Funcionario.php");
 $alunos = json_decode(file_get_contents("data/aluno.json"),true);
 $funcionarios = json_decode(file_get_contents("data/func.json"),true);
-system("clear");
 if($alunos == null && $funcionarios == null)
 {
     print "Não há cadastros!!\n";
     die;
 }
-$email = readline("Email: ");
-$senha = readline("Senha: ");
+$email = $_POST['email'];
+$senha = $_POST['senha'];
 if($email != null && $senha != null)
 {
     $grupo = null;
@@ -44,7 +43,7 @@ if($email != null && $senha != null)
     switch($grupo)
     {
         case "Funcionario":
-            print "Funcionário cadastrado, acesso liberado!\n";
+            header("Location: ../liberar.html");
         break;
         case "Aluno":
             print "Aluno cadastrado, acesso liberado!\n";
