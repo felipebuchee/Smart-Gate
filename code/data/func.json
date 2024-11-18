@@ -1,0 +1,22 @@
+[
+    {
+        "nome": "Walmonn Eduardo",
+        "siap": 123456789,
+        "cpf": "123456789",
+        "senha": 15082007,
+        "email": "walmonn.eduardo.tds2023@gmail.com",
+        "tag":"1A 2B 2C",
+        "adm": true,
+        "liberar": true
+    },
+    {
+        "nome": "Felipe",
+        "siap": 565456,
+        "cpf": "98756419",
+        "senha": 10092007,
+        "email": "felipe.buche.tds2023@gmail.com",
+        "tag":"4D 5E 6F",
+        "adm": true,
+        "liberar": true
+    }
+]
