@@ -157,16 +157,8 @@ main {
 /**FIM SUB-MAIN */
 
 /**INICIO LOGIN */
-header {
-	position: fixed;
-	top: 0;
-	right: 0;
-	width: 100%;
-	background: transparent;
-	display: flex;
-	justify-content: flex-end;
-	align-items: center;
-	z-index: 98;
+.formReg{
+	scale: 0.5px;
 }
 
 .telaLogin .fechar {
