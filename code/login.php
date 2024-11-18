@@ -46,10 +46,10 @@ if($email != null && $senha != null)
             header("Location: ../liberar.html");
         break;
         case "Aluno":
-            print "Aluno cadastrado, acesso liberado!\n";
+            header("Location: ../telaAluno.html");
         break;
         case null:
-            print "Não cadastrado, acesso negado!\n";
+            header("Location: ../telaLoginFunc.html");
         break;
         default:
             print "Bug do milênio!\n";
