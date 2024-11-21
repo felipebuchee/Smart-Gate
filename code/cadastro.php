@@ -19,9 +19,8 @@ function cadastrarFuncionario()
     $liberar = $_POST['liberar'];
     if($nome != null && $cpf != null && $senha != null && $email != null && $tag != null && $adm != null && $liberar != null)
     {
-        if(is_numeric($senha) && is_numeric($liberar) && is_numeric($adm))
+        if(is_numeric($liberar) && is_numeric($adm))
         {
-            $senha = intval($senha);
             $liberar = intval($liberar);
             $adm = intval($adm);
             if($adm == 1)

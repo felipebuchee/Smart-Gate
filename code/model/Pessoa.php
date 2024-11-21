@@ -3,7 +3,7 @@ class Pessoa
 {
     protected string $nome = "";
     protected string $cpf = "";
-    protected int $senha = 0;
+    protected string $senha = "";
     protected string $email = "";
     protected string $tag = "";
     
@@ -47,7 +47,7 @@ class Pessoa
     /**
      * Get the value of senha
      */
-    public function getSenha(): int
+    public function getSenha(): string
     {
         return $this->senha;
     }
@@ -55,7 +55,7 @@ class Pessoa
     /**
      * Set the value of senha
      */
-    public function setSenha(int $senha): self
+    public function setSenha(string $senha): self
     {
         $this->senha = $senha;
 
