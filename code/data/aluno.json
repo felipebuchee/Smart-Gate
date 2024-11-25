@@ -1,50 +1,34 @@
 [
     {
-        "nome": "Aura",
-        "numeroMatricula": 159753456,
-        "cpf": "87187178",
-        "senha": 22072000,
-        "email": "teste@hotmail.com",
-        "tag": "4D 5E 6F"
-    },
-    {
-        "nome": "Felipe",
-        "numeroMatricula": 20233014447,
-        "cpf": "965635262",
-        "senha": 10092007,
-        "email": "felipe10buche@gmail.com",
-        "tag": "5D 5R 6F"
-    },
-    {
-        "nome": "Felipinho da dz7",
-        "numeroMatricula": 2023565665,
-        "cpf": "12597257908",
-        "senha": 10092007,
-        "email": "marinesprima@gmail.com",
-        "tag": "d7g8u9"
-    },
-    {
-        "nome": "Ana Júlia",
-        "numeroMatricula": 82651586,
-        "cpf": "455965635963",
-        "senha": 10092007,
-        "email": "kjbnkdjbskalkjdw@gmail.com",
-        "tag": "d7g8u9"
-    },
-    {
-        "nome": "Aurrélio",
-        "numeroMatricula": 522662636,
-        "cpf": "256236252",
-        "senha": 10092007,
-        "email": "jndsnsdkmds@gmail.com",
-        "tag": "d7g8u9"
-    },
-    {
-        "nome": "Jefferson",
-        "numeroMatricula": 37843873789,
-        "cpf": "637874389",
-        "senha": 10092007,
-        "email": "ijdshjdskhjs@gmail.com",
-        "tag": "d7g8as"
+        "nome": "Sarah",
+        "numeroMatricula": 489484984489,
+        "cpf": "123456",
+        "senha": "123456",
+        "email": "sarah.tds2023@gmail.com",
+        "tag": "1a2b3c",
+        "horarios": [
+            [
+                [
+                    7,
+                    0
+                ],
+                [
+                    13,
+                    20
+                ]
+            ],
+            [
+                [
+                    17,
+                    30
+                ],
+                [
+                    22,
+                    0
+                ]
+            ]
+        ],
+        "historio": [],
+        "liberacao-excepicional": 0
     }
 ]

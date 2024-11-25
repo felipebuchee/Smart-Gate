@@ -1,3 +1,28 @@
+<?php
+
+// Caminho do arquivo
+$filePath = __DIR__ . "/code/data/registro.json";
+
+if (!file_exists($filePath)) {
+    die("Erro: Arquivo não encontrado no caminho $filePath");
+}
+
+$registro = json_decode(file_get_contents($filePath), true);
+
+if ($registro === null) {
+    die("Erro: Não foi possível decodificar o arquivo JSON.");
+}
+
+if (!isset($registro['liberar'])) {
+    die("Erro: A chave 'liberar' não foi encontrada no arquivo JSON.");
+}
+
+if ($registro['liberar'] == false) {
+    header("Location: index.php");
+    exit;
+}
+?>
+
 <!DOCTYPE html>
 <html lang="pt-br">
 
@@ -26,19 +51,19 @@
         </div> <!--botao expandir-->
         <ul>
             <li class="item-menu ativo">
-                <a href="index.html">
+                <a href="index.php">
                     <span class="icon"><i class="bi bi-house"></i></span>
                     <span class="txt-link">Ínicio</span>
                 </a>
             </li>
             <li class="item-menu">
-                <a href="telaLoginFunc.html">
+                <a href="telaLoginFunc.php">
                     <span class="icon"><i class="bi bi-backpack"></i></span>
                     <span class="txt-link">Aluno</span>
                 </a>
             </li>
             <li class="item-menu">
-                <a href="configuracoes.html">
+                <a href="configuracoes.php">
                     <span class="icon"><i class="bi bi-gear"></i></span>
                     <span class="txt-link">Configurações</span>
                 </a>
@@ -49,9 +74,7 @@
 
     <main>
         <button type="button" class="btn btn-primary btn-lg">Liberar</button>
-        <button type="button" class="btn btn-secondary btn-lg">Bloquear</button>
-        <a href="cadastroFuncionario.html"><button type="button" class="btn btn-danger">CADASTRAR FUNC</button></a>
-        <a href="cadastroAluno.html"><button type="button" class="btn btn-danger">CADASTRAR ALUNO</button></a>
+        <button type="button" class="btn btn-warning btn-lg">Bloquear</button>
     </main>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"

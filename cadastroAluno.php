@@ -29,19 +29,19 @@
         <!--botao expandir-->
         <ul>
             <li class="item-menu ativo">
-                <a href="index.html">
+                <a href="index.php">
                     <span class="icon"><i class="bi bi-house"></i></span>
                     <span class="txt-link">Ínicio</span>
                 </a>
             </li>
             <li class="item-menu">
-                <a href="telaLoginFunc.html">
+                <a href="telaLoginFunc.php">
                     <span class="icon"><i class="bi bi-backpack"></i></span>
                     <span class="txt-link">Aluno</span>
                 </a>
             </li>
             <li class="item-menu">
-                <a href="configuracoes.html">
+                <a href="configuracoes.php">
                     <span class="icon"><i class="bi bi-gear"></i></span>
                     <span class="txt-link">Configurações</span>
                 </a>
@@ -52,62 +52,62 @@
 
     <div class="formReg">
         <!--formulario registro-->
-        <h2>Registro (Funcionário)</h2>
+        <h2>Registro (Aluno)</h2>
         <form action="./code/cadastro.php" method="POST">
 
             <div class="input-box">
                 <span class="icon-log"><i class="bi bi-person"></i></span>
-                <input type="text" name="nome" required>
+                <input type="text" name="nome">
                 <label>Nome</label>
             </div>
 
             <div class="input-box">
                 <span class="icon-log"><i class="bi bi-123"></i></span>
-                <input type="number" name="cpf" required>
+                <input type="number" name="cpf">
                 <label>CPF</label>
             </div>
 
             <div class="input-box">
+                <span class="icon-log"><i class="bi bi-bookmark"></i></span>
+                <input type="number" name="numeroMatricula">
+                <label>Matrícula</label>
+            </div>
+
+            <div class="input-box">
+                <span class="icon-log"><i class="bi bi-bookmark"></i></span>
+                <input type="number" name="numeroMatricula">
+                <label>Matrícula</label>
+            </div>
+
+            <div class="input-box">
                 <span class="icon-log"><i class="bi bi-envelope"></i></span>
-                <input type="Email" name="email" required>
+                <input type="Email" name="email">
                 <label>Email</label>
             </div>
 
             <div class="input-box">
                 <span class="icon-log"><i class="bi bi-key"></i></i></span>
                 <input type="password"
-                    name="senha" required>
+                    name="senha">
                 <label>Senha</label>
             </div>
 
-            <div class="input-box">
-                <span class="icon-log"><i class="bi bi-bookmark"></i></span>
-                <input type="number" name="siap">
-                <label>SIAPE</label>
+            <div class="form-check form-check-inline">
+                <input class="form-check-input" type="radio" name="turno" id="inlineRadio1" value="1">
+                <label class="form-check-label" for="inlineRadio1">Matutino</label>
             </div>
-
+            <div class="form-check form-check-inline">
+                <input class="form-check-input" type="radio" name="turno" id="inlineRadio2" value="2">
+                <label class="form-check-label" for="inlineRadio2">Vespertino</label>
+            </div>
 
             <div class="input-box">
                 <span class="icon-log"><i class="bi bi-broadcast"></i></span>
-                <input type="text" name="tag" required>
+                <input type="text" name="tag">
                 <label>TAG RFID</label>
             </div>
 
-            <div class="input-box">
-                <span class="icon-log"><i class="bi bi-award"></i></span>
-                <input type="text" maxlength="1" pattern="\d*" oninput="this.value = this.value.replace(/[^1-2]/g, '');"
-                    name="adm" required>
-                <label>ADM (1 - SIM | 2 - NÃO)</label>
-            </div>
-
-            <div class="input-box">
-                <span class="icon-log"><i class="bi bi-door-open"></i></span>
-                <input type="text" maxlength="1" pattern="\d*" oninput="this.value = this.value.replace(/[^1-2]/g, '');"
-                    name="liberar" required>
-                <label>Permissão para liberar (1 - SIM | 2 - NÃO)</label>
-            </div>
-
-            <button type="submit" class="btnSubmit" name="tipo" value="1">Cadastrar</button>
+            <button type="submit" class="btnSubmit" name="tipo" value="2">Cadastrar</button>
         </form>
     </div>
 

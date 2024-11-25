@@ -26,19 +26,19 @@
         </div> <!--botao expandir-->
         <ul>
             <li class="item-menu ativo">
-                <a href="index.html">
+                <a href="index.php">
                     <span class="icon"><i class="bi bi-house"></i></span>
                     <span class="txt-link">Ínicio</span>
                 </a>
             </li>
             <li class="item-menu">
-                <a href="telaLoginFunc.html">
+                <a href="telaLoginFunc.php">
                     <span class="icon"><i class="bi bi-backpack"></i></span>
                     <span class="txt-link">Aluno</span>
                 </a>
             </li>
             <li class="item-menu">
-                <a href="configuracoes.html">
+                <a href="configuracoes.php">
                     <span class="icon"><i class="bi bi-gear"></i></span>
                     <span class="txt-link">Configurações</span>
                 </a>
@@ -49,7 +49,6 @@
 
     <main>
         
-        <h2>aqui vai o relatorio de entradas e saidas</h2>
     </main>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
@@ -61,4 +60,5 @@
         <script src="javascript/cookie.js"></script>
         <script src="javascript/fecharMenu.js"></script>
         <script src="javascript/mudarLogin.js"></script>
+        <script src="javascript/firebase.js"></script>
 </body>

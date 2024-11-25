@@ -70,6 +70,7 @@ function cadastrarFuncionario()
             {
                 $funcionarios = Funcionario::criarFuncionarios($funcionarios);
             }
+            $horarios = array(7,22);
             $funcionario = new Funcionario();
             $funcionario->setNome($nome);
             $funcionario->setSenha($senha);
@@ -78,6 +79,7 @@ function cadastrarFuncionario()
             $funcionario->setTag($tag);
             $funcionario->setAdm($adm);
             $funcionario->setLiberar($liberar);
+            $funcionario->setHorarios($horarios);
             if($siap != null)
             {
                 $funcionario->setSiap($siap);
@@ -106,6 +108,7 @@ function cadastrarAluno()
     $email = $_POST['email'];
     $tag = $_POST['tag'];
     $num = $_POST['numeroMatricula'];
+    $turno = $_POST['turno'];
     if($nome != null && $cpf != null && $senha != null && $email != null && $tag != null && $num != null)
     {
         if(is_numeric($senha) && is_numeric($num))
@@ -121,6 +124,15 @@ function cadastrarAluno()
             {
                 $alunos = Aluno::criarAlunos($alunos);
             }
+            switch($turno)
+            {
+                case "1":
+                    $horarios = array([[7,0],[7,30]],[[11,30],[22,0]]);
+                break;
+                case "2":
+                    $horarios = array([[7,0],[13,20]],[[17,30],[22,0]]);
+                break;
+            }
             $aluno = new Aluno();
             $aluno->setNome($nome);
             $aluno->setSenha($senha);
@@ -128,6 +140,7 @@ function cadastrarAluno()
             $aluno->setCpf($cpf);
             $aluno->setTag($tag);
             $aluno->setNumeroMatricula($num);
+            $aluno->setHorarios($horarios);
             $alunos[] = $aluno;
             file_put_contents("data/aluno.json",json_encode($alunos,JSON_PRETTY_PRINT | JSON_UNESCAPED_UNICODE));
 

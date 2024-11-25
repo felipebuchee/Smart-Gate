@@ -1,62 +1,16 @@
 [
     {
-        "nome": "Walmonn Eduardo",
-        "siap": 123456789,
-        "cpf": "123456789",
-        "senha": "15082007",
-        "email": "walmonn.eduardo.tds2023@gmail.com",
-        "tag": "",
-        "adm": true,
-        "liberar": false
-    },
-    {
         "nome": "Felipe",
         "siap": 565456,
         "cpf": "98756419",
         "senha": "10092007",
         "email": "felipe.buche.tds2023@gmail.com",
-        "tag": "",
+        "tag": "g8l7l13b22",
         "adm": true,
-        "liberar": false
-    },
-    {
-        "nome": "Felipe",
-        "siap": 0,
-        "cpf": "54625146",
-        "senha": "10092007",
-        "email": "area1interact@outlook.com",
-        "tag": "",
-        "adm": true,
-        "liberar": false
-    },
-    {
-        "nome": "Sarah Elizabete Giembra",
-        "siap": 0,
-        "cpf": "14752415584",
-        "senha": "123456",
-        "email": "sarah.elizabete.tds2023@gmail.com",
-        "tag": "",
-        "adm": true,
-        "liberar": false
-    },
-    {
-        "nome": "Heloisa",
-        "siap": 0,
-        "cpf": "596156956263",
-        "senha": "10092007",
-        "email": "vbjshvgdshjkhsdj@gmail.com",
-        "tag": "",
-        "adm": false,
-        "liberar": true
-    },
-    {
-        "nome": "Nicolau Teobaldo Buche",
-        "siap": 7548904598,
-        "cpf": "8765789897",
-        "senha": "vinilipe1410",
-        "email": "jfhhgffjdfjddj@gmail.com",
-        "tag": "d7g8u9",
-        "adm": false,
-        "liberar": false
+        "liberar": true,
+        "horario": [
+            7,
+            22
+        ]
     }
 ]

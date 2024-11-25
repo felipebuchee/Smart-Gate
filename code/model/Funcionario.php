@@ -5,6 +5,11 @@ class Funcionario extends Pessoa implements \JsonSerializable
     private ?int $siap = 0; // Siap agora é opcional
     private bool $adm = false;
     private bool $liberar = false;
+    private array $horarios;
+    public function __construct()
+    {
+        $this->horarios = array();
+    }
     public static function criarFuncionarios(array $recolherdados) 
     {
         $funcionarios = array();
@@ -18,7 +23,8 @@ class Funcionario extends Pessoa implements \JsonSerializable
             $funcionarios[$i]->setSiap($recolherdados[$i]['siap']);
             $funcionarios[$i]->setAdm($recolherdados[$i]['adm']);
             $funcionarios[$i]->setLiberar($recolherdados[$i]['liberar']);
-            $funcionarios[$i]->setLiberar($recolherdados[$i]['tag']);
+            $funcionarios[$i]->setTag($recolherdados[$i]['tag']);
+            $funcionarios[$i]->setHorarios($recolherdados[$i]['horario']);
         }
 
         return $funcionarios;
@@ -64,6 +70,22 @@ class Funcionario extends Pessoa implements \JsonSerializable
         return $this;
     }
 
+    /**
+     * Set the value of Horarios
+     */
+    public function setHorarios(array $horarios): self
+    {
+        $this->horarios = $horarios;
+
+        return $this;
+    }
+    /**
+     * Get the value of Horarios
+     */
+    public function getHorarios(): array
+    {
+        return $this->horarios;
+    }
     /**
      * Get the value of adm
      */
