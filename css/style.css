@@ -202,7 +202,7 @@ header {
 }
 
 .telaLogin {
-	scale: 0;
+	scale: 1;
 	transition: 0.2s;
 	overflow: hidden;
 	position: fixed;
